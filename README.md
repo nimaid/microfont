@@ -41,3 +41,21 @@ These calculations work for `microfont_2d.png`. While they are slightly more com
 x = (get_ascii_code(character) & 0b1111) * 3
 y = (get_ascii_code(character) >> 4) * 5
 ```
+
+## Example Code: Image Generators
+I have included two Python scripts named `generate_1d.py` and `generate_2d.py`. Both are tools with a command line interface that render text into images using a font image.
+
+However:
+- `generate_1d.py` demonstrates how to use `microfont_1d.png`
+- `generate_2d.py` demonstrates how to use `microfont_2d.png`
+
+To use the scripts, you need to install `Pillow`:
+```
+pip install Pillow
+```
+
+Then you can see how to use the scripts with:
+```
+python generate_1d.py --help
+python generate_2d.py --help
+```
