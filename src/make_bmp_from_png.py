@@ -13,48 +13,14 @@ from PIL import Image
 PATH = Path(__file__).parent.parent.resolve()
 
 DEFAULT_FONT_IN_PATH = os.path.join(PATH, "Microfont_1D.png")
-DEFAULT_FONT_OUT_PATH = os.path.join(PATH, "Microfont_2D.png")
-
-
-# Renders a 1D font Image font into a 2D font Image
-def make_2d_font_from_1d_font(font_image):
-    function_name = sys._getframe().f_code.co_name
-    if font_image.width % 128 != 0:
-        raise Exception(f"{function_name}() requires a font image with a width divisible by 128. (input 'font_image' width: {font_image.width})")
-    
-    chars_wide = 16
-    chars_tall = 8
-    
-    char_width = font_image.width // 128
-    char_height = font_image.height
-    
-    row_width = char_width * chars_wide
-    
-    width = (char_width * chars_wide)
-    height = (char_height * chars_tall)
-    
-    output_image = Image.new("RGBA", (width, height))
-    
-    for row in range(chars_tall):
-        source_x = row * row_width
-        cut_box = (source_x, 0, source_x + row_width, char_height)
-        
-        row_image = font_image.crop(cut_box)
-        
-        paste_x = 0
-        paste_y = row * char_height
-        paste_position = (paste_x, paste_y)
-        
-        output_image.paste(row_image, paste_position)
-        
-    return output_image
+DEFAULT_FONT_OUT_PATH = os.path.join(PATH, "Microfont_1D.bmp")
 
 
 # Parse arguments
 def parse_args(args):
     parser = argparse.ArgumentParser(
-        description=f"Renders a 1D font image into a 2D font Image.\n"
-                    f"Used to update the 2D sprite sheets automatically.\n\n"
+        description=f"Converts a transparent PNG font image into a black-and-white BMP font image.\n"
+                    f"Used to update the BMP sprite sheets automatically.\n\n"
                     f"Valid parameters are shown in {{braces}}.\n"
                     f"Default parameters are shown in [brackets].",
         formatter_class=argparse.RawDescriptionHelpFormatter
@@ -80,11 +46,23 @@ def parse_args(args):
     return parsed_args
 
 
+# Converts a transparent PNG font Image font into a black-and-white BMP font Image
+# Just uses the alpha channel, ignores actual RGB color values
+def make_bmp_from_png(font_image):
+    output_image = Image.new("1", font_image.size, (0))
+    
+    foreground = Image.new("1", font_image.size, (1))
+    
+    output_image.paste(foreground, (0, 0), mask=font_image)
+        
+    return output_image
+
+
 def main(args):
     print()
     parsed_args = parse_args(args)
     
-    output_image = make_2d_font_from_1d_font(parsed_args.font)
+    output_image = make_bmp_from_png(parsed_args.font)
     
     output_image.save(parsed_args.output)
     print(f"Saved image to \"{parsed_args.output}\"")

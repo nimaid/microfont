@@ -8,6 +8,7 @@ A Highly Legible 3x5 Pixel Font With Full ASCII Support
 
 <summary>Sample Images</summary>
 
+<br />
 
 <p align="center">The classic pangram about a quick brown fox.</p>
 <p align="center"><img src="docs/pangram.png" width="400px" alt="The classic pangram about a quick brown fox."/></p>
@@ -35,10 +36,14 @@ A Highly Legible 3x5 Pixel Font With Full ASCII Support
 
 </details>
 
-## Using Bitmap Fonts Programmatically
+## Bitmap Fonts (Sprite Sheet)
 Two different formats of bitmap font are provided:
-- [`Microfont_1D.png`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont_1D.png) is a simple format that has one long row of all `128` ASCII characters laid out left-to-right.
-- [`Microfont_2D.png`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont_2D.png) is a more complex format that has the `128` ASCII characters laid out in `8` rows of `16`. They are laid out left-to-right, top-to-bottom (like English text).
+- `Microfont_1D` is a simple format that has one long row of all `128` ASCII characters laid out left-to-right.
+  - [`Microfont_1D.png`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont_1D.png) (transparent)
+  - [`Microfont_1D.bmp`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont_1D.bmp) (1-bit black-and-white)
+- `Microfont_2D` is a more complex format that has the `128` ASCII characters laid out in `8` rows of `16`. They are laid out left-to-right, top-to-bottom (like English text).
+  - [`Microfont_2D.png`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont_2D.png) (transparent)
+  - [`Microfont_2D.bmp`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont_2D.bmp) (1-bit black-and-white)
 
 ### Calculating Glyph Position
 The layout of the images has been optimized to make converting from an ASCII character code to X and Y coordinates extremely simple.
@@ -68,7 +73,7 @@ y = (get_ascii_code(character) >> 4) * 5
 ```
 
 ### Example Code - Image Generators
-I have included two Python scripts named `src/generate_1d.py` and `src/generate_2d.py`. I used these to generate the example images.
+I have included two Python scripts named `src/generate_1D.py` and `src/generate_2D.py`. I used these to generate the example images.
 
 Both are tools with a command line interface that render text into images using a font image, however:
 - `src/generate_1D.py` demonstrates how to use `Microfont_1D.png`
@@ -137,7 +142,7 @@ You can add these fonts for use on a webpage by including the following code in 
 
 
 ## Direct Encodings
-Thanks to [slaimon](https://github.com/slaimon) and his converter script `src/encode_binary_array.py`, you can now directly store this font in a simple array or binary numbers. Because each character is only `15` pixels total, they fit well into a `16`-bit word. The number representing an ASCII character's glyph is indexed by that ASCII character's code.
+Thanks to [slaimon](https://github.com/slaimon) and his converter script `src/encode_binary_array.py`, you can now directly store this font in a simple array of binary numbers. Because each character is only `15` pixels total, they fit well into a `16`-bit word. The number representing an ASCII character's glyph is indexed by that ASCII character's code.
 
 Here is that array for the current iteration of the Microfont:
 ```
