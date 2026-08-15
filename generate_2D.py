@@ -20,7 +20,7 @@ class TextAlign(Enum):
 
 PATH = Path(__file__).parent.resolve()
 
-DEFAULT_FONT_PATH = os.path.join(PATH, "microfont_1d.png")
+DEFAULT_FONT_PATH = os.path.join(PATH, "Microfont_2D.png")
 DEFAULT_ALIGN = TextAlign.FLUSH_LEFT
 DEFAULT_BACKGROUND_COLOR = "#1a1a1e"
 DEFAULT_TEXT_COLOR = "#f9f9f9"
@@ -56,8 +56,10 @@ def render_image_font(text,
         raise Exception(f"{function_name}() requires a non-zero length string as it's 'text'")
     if scale % 1 != 0:
         raise TypeError(f"{function_name}() requires an integer as a scaling factor (input 'scale': {scale})")
-    if font_image.width % 128 != 0:
-        raise Exception(f"{function_name}() requires a font image with a width divisible by 128. (input 'font_image' width: {font_image.width})")
+    if font_image.width % 16 != 0:
+        raise Exception(f"{function_name}() requires a font image with a width divisible by 16. (input 'font_image' width: {font_image.width})")
+    if font_image.height % 8 != 0:
+        raise Exception(f"{function_name}() requires a font image with a height divisible by 8. (input 'font_image' height: {font_image.height})")
     
     spacing = spacing * scale
     
@@ -67,8 +69,8 @@ def render_image_font(text,
     else:
         font_image = scaled_font_image
     
-    char_width = font_image.width // 128
-    char_height = font_image.height
+    char_width = font_image.width // 16
+    char_height = font_image.height // 8
     
     text_width = 0
     text_height = 0
@@ -103,8 +105,8 @@ def render_image_font(text,
                 warnings.warn(f"character code \"{char_code}\" is not standard ASCII, replacing with a space")
                 char_code = ord(" ")
             
-            source_x = char_code * char_width
-            source_y = 0
+            source_x = (char_code & 0b1111) * char_width
+            source_y = (char_code >> 4) * char_height
 
             cut_box = (source_x, source_y, source_x + char_width, source_y + char_height)
             paste_position = (x, y)
@@ -197,6 +199,7 @@ def parse_args(args):
 
 def main(args):
     print()
+    
     parsed_args = parse_args(args)
     
     text_image = render_image_font(

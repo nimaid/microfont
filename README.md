@@ -27,7 +27,7 @@ bottom = y + 5
 ```
 
 ### 1D Calculations
-These calculations work for [`microfont_1d.png`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/microfont_1d.png) and are probably the simplest to do. The X coordinate is directly related to the full ASCII character code.
+These calculations work for [`Microfont_1D.png`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont_1D.png) and are probably the simplest to do. The X coordinate is directly related to the full ASCII character code.
 
 ```
 x = get_ascii_code(character) * 3
@@ -35,7 +35,7 @@ y = 0
 ```
 
 ### 2D Calculations
-These calculations work for [`microfont_2d.png`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/microfont_2d.png). While they are slightly more complex, they allow for the source image to be a more reasonable aspect ratio. The X coordinate is based on the low nibble of the character code and the Y coordinate is based on the high nibble.
+These calculations work for [`Microfont_2D.png`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont_2D.png). While they are slightly more complex, they allow for the source image to be a more reasonable aspect ratio. The X coordinate is based on the low nibble of the character code and the Y coordinate is based on the high nibble.
 
 ```
 x = (get_ascii_code(character) & 0b1111) * 3
@@ -46,8 +46,8 @@ y = (get_ascii_code(character) >> 4) * 5
 I have included two Python scripts named `generate_1d.py` and `generate_2d.py`. Both are tools with a command line interface that render text into images using a font image.
 
 However:
-- `generate_1d.py` demonstrates how to use `microfont_1d.png`
-- `generate_2d.py` demonstrates how to use `microfont_2d.png`
+- `generate_1d.py` demonstrates how to use `Microfont_1D.png`
+- `generate_2d.py` demonstrates how to use `Microfont_2D.png`
 
 To use the scripts, you need to install `Pillow`:
 ```
@@ -62,10 +62,10 @@ python generate_2d.py --help
 
 ## TrueType Fonts
 Thanks to the freeware program [PixelForge](https://www.pixel-forge.com/), I was also able to create `.ttf` versions of this font!
-- The [`microfont_mono.ttf`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/microfont_mono.ttf) file is a truly faithful recreation of the monospaced results you would normally get using this font programmatically from the sprite sheet.
-- The [`microfont.ttf`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/microfont.ttf) file is a version that is not monospaced, which may be desirable for graphic design and general text rendering.
+- The [`Microfont-Mono.ttf`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont-Mono.ttf) file is a truly faithful recreation of the monospaced results you would normally get using this font programmatically from the sprite sheet.
+- The [`Microfont.ttf`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont.ttf) file is a version that is not monospaced, which may be desirable for graphic design and general text rendering.
 
-PixelForge recommends the following settings for best results:
+Becase the height of the characters is `5` pixels, PixelForge recommends the following settings for best results:
 ```
 Recommended size: 5pt at 96 DPI
 
