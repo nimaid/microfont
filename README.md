@@ -42,12 +42,12 @@ x = (get_ascii_code(character) & 0b1111) * 3
 y = (get_ascii_code(character) >> 4) * 5
 ```
 
-## Example Code: Image Generators
+## Example Code - Image Generators
 I have included two Python scripts named `generate_1d.py` and `generate_2d.py`. Both are tools with a command line interface that render text into images using a font image.
 
 However:
-- `generate_1d.py` demonstrates how to use `Microfont_1D.png`
-- `generate_2d.py` demonstrates how to use `Microfont_2D.png`
+- `generate_1D.py` demonstrates how to use `Microfont_1D.png`
+- `generate_2D.py` demonstrates how to use `Microfont_2D.png`
 
 To use the scripts, you need to install `Pillow`:
 ```
@@ -56,8 +56,8 @@ pip install Pillow
 
 Then you can see how to use the scripts with:
 ```
-python generate_1d.py --help
-python generate_2d.py --help
+python generate_1D.py --help
+python generate_2D.py --help
 ```
 
 ## TrueType Fonts
@@ -76,3 +76,10 @@ Best results at integer multiples:
    20pt
    ...
 ```
+
+## WOFF / WOFF2 Fonts
+Thanks to [Transfonter](https://transfonter.org/), I was able to convert the `.ttf` fonts into `.woff` and `.woff2` fonts which are more suitable for web usage.
+- [`Microfont-Mono.woff`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont-Mono.woff)
+- [`Microfont-Mono.woff2`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont-Mono.woff2)
+- [`Microfont.woff`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont.woff)
+- [`Microfont.woff2`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont.woff2)
