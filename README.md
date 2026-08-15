@@ -104,17 +104,19 @@ Thanks to [Transfonter](https://transfonter.org/), I was able to convert the `.t
   - [`Microfont.woff2`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont.woff2)
   - [`Microfont.woff`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont.woff)
 
-Because the height of the characters is `5` pixels, PixelForge recommends the following settings for best results:
-```
-Recommended size: 5pt at 96 DPI
+Because the height of the characters is `5` pixels with `1` pixel between rows, PixelForge recommends using multiples of `6pt` at `96 DPI` for best results. In theory, that should render the font pixel-perfectly without antialiasing. 
 
-Best results at integer multiples:
-   5pt
-   10pt
-   15pt
-   20pt
-   ...
-```
+However, in practice this behavior actually occurs at multiples of `8pt` at `96 DPI`. I don't know why this is, I can only assume it's a bug with PixelForge.
+
+**So, for best results, use the following settings:**
+- `8pt` at `96 DPI`
+- `16pt` at `96 DPI`
+- `24pt` at `96 DPI`
+- `32pt` at `96 DPI`
+- `40pt` at `96 DPI`
+- `48pt` at `96 DPI`
+- ... etc.
+
 
 ### Web Usage
 You can add these fonts for use on a webpage by including the following code in your CSS stylesheet:
