@@ -65,7 +65,7 @@ Thanks to the freeware program [PixelForge](https://www.pixel-forge.com/), I was
 - The [`Microfont-Mono.ttf`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont-Mono.ttf) file is a truly faithful recreation of the monospaced results you would normally get using this font programmatically from the sprite sheet.
 - The [`Microfont.ttf`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont.ttf) file is a version that is not monospaced, which may be desirable for graphic design and general text rendering.
 
-Becase the height of the characters is `5` pixels, PixelForge recommends the following settings for best results:
+Because the height of the characters is `5` pixels, PixelForge recommends the following settings for best results:
 ```
 Recommended size: 5pt at 96 DPI
 
@@ -83,3 +83,32 @@ Thanks to [Transfonter](https://transfonter.org/), I was able to convert the `.t
 - [`Microfont-Mono.woff2`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont-Mono.woff2)
 - [`Microfont.woff`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont.woff)
 - [`Microfont.woff2`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont.woff2)
+
+## Direct Encodings
+Thanks to @slaimon and his converter script `src/encode_binary_array.py`, you can now directly store this font in a simple array or binary numbers. Because each character is only `15` pixels total, they fit well into a `16`-bit word. The number representing an ASCII character's glyph is indexed by that ASCII character's code.
+
+Here is that array for the current iteration of the Microfont:
+```
+{
+    0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,
+    0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,
+    0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,
+    0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,
+    0x0000, 0x2482, 0x5a00, 0x5f7d, 0x3cfa, 0x52a5, 0x3ceb, 0x2400,
+    0x1491, 0x4494, 0x5540, 0x05d0, 0x0014, 0x01c0, 0x0002, 0x12a4,
+    0x7b6f, 0x2c97, 0x62a7, 0x628e, 0x1779, 0x798e, 0x79ef, 0x72a4,
+    0x7bef, 0x7bcf, 0x0410, 0x0414, 0x1511, 0x0e38, 0x4454, 0x72c2,
+    0x2b63, 0x2bed, 0x6bae, 0x3923, 0x6b6e, 0x79a7, 0x79a4, 0x396b,
+    0x5bed, 0x7497, 0x126a, 0x5bad, 0x4927, 0x5fed, 0x5f6d, 0x2b6a,
+    0x6ba4, 0x3b73, 0x6bad, 0x388e, 0x7492, 0x5b6f, 0x5b6a, 0x5bfd,
+    0x5aad, 0x5a92, 0x72a7, 0x3493, 0x4889, 0x6496, 0x2a00, 0x0007,
+    0x4400, 0x076b, 0x4d6e, 0x0723, 0x176b, 0x0573, 0x15d2, 0x2aca,
+    0x49ad, 0x2092, 0x104a, 0x4bad, 0x2491, 0x0bed, 0x0d6d, 0x056a,
+    0x0d74, 0x0759, 0x0564, 0x070e, 0x2e92, 0x0b6b, 0x0b6a, 0x0b7d,
+    0x0a95, 0x0aca, 0x0e67, 0x3513, 0x2492, 0x6456, 0x00f0, 0x0000
+}
+```
+
+To learn how to decode each glyph, see the `decode_glyph()` function in `src/encode_binary_array.py`.
+
+To learn how to use the decoded glyph bitmap arrays, see the `print_bitmap()` function.
