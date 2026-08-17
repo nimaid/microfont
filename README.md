@@ -35,10 +35,9 @@
 <p align="center">ASCII art of my logo.</p>
 <p align="center"><p align="center"><img src="docs/logo.png" width="400px" alt="ASCII art of my logo."/></p>
 
-
 </details>
 
-## Bitmap Fonts (Sprite Sheet)
+## Bitmap Fonts (Sprite Sheets)
 Two different formats of bitmap font are provided:
 - `Microfont_1D` is a simple format that has one long row of all `128` ASCII characters laid out left-to-right.
   - [`Microfont_1D.png`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont_1D.png) (transparent)
@@ -47,7 +46,13 @@ Two different formats of bitmap font are provided:
   - [`Microfont_2D.png`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont_2D.png) (transparent)
   - [`Microfont_2D.bmp`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont_2D.bmp) (1-bit black-and-white)
 
+<br />
+<details>
+
+<summary>How To Use The Sprite Sheets</summary>
+
 ### Calculating Glyph Position
+
 The layout of the images has been optimized to make converting from an ASCII character code to X and Y coordinates extremely simple.
 
 All characters are `3` pixels wide by `5` pixels tall. The X and Y coordinates calculated below are for the **top left corner** of the desired glyph. So the full bounding box for any glyph is:
@@ -92,11 +97,12 @@ python src/generate_1D.py --help
 python src/generate_2D.py --help
 ```
 
+</details>
+
 ## Vector Fonts (TrueType / WOFF / WOFF2)
-Thanks to the freeware program [PixelForge](https://www.pixel-forge.com/), I was able to create two different versions of this bitmap font in `.ttf` format!
+Thanks to the freeware program [PixelForge](https://www.pixel-forge.com/), I was able to create two different versions of this bitmap font in `.ttf` format! And thanks to [Transfonter](https://transfonter.org/), I was also able to convert the `.ttf` fonts into `.woff` and `.woff2` fonts, which are more suitable for web usage.
 
-Thanks to [Transfonter](https://transfonter.org/), I was able to convert the `.ttf` fonts into `.woff` and `.woff2` fonts, which are more suitable for web usage.
-
+Two different font styles are provided:
 - The `Microfont-Mono` font is a truly faithful recreation of the monospaced results you would normally get using this font programmatically from the sprite sheet.
   - [`Microfont-Mono.ttf`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont-Mono.ttf)
   - [`Microfont-Mono.woff2`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont-Mono.woff2)
@@ -106,17 +112,23 @@ Thanks to [Transfonter](https://transfonter.org/), I was able to convert the `.t
   - [`Microfont.woff2`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont.woff2)
   - [`Microfont.woff`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont.woff)
 
-Because the height of the characters is `5` pixels with `1` pixel between rows, PixelForge recommends using multiples of `6pt` at `96 DPI` for best results. In theory, that should render the font pixel-perfectly without antialiasing. 
+<br />
+<details>
 
-However, in practice this behavior actually occurs at multiples of `8pt` at `96 DPI`. I don't know why this is, I can only assume it's a bug with PixelForge.
+<summary>How To Use The Vector Fonts</summary>
+
+### Optimal Text Sizes
+Because the height of the characters is `5` pixels with `1` pixel between rows, PixelForge recommends using multiples of `6pt @ 96 DPI` for best results. In theory, that should render the font pixel-perfectly without antialiasing. 
+
+However, in practice this behavior actually occurs at multiples of `8pt @ 96 DPI`. I don't know why this is, I can only assume it's a bug with PixelForge.
 
 **So, for best results, use the following settings:**
-- `8pt` at `96 DPI`
-- `16pt` at `96 DPI`
-- `24pt` at `96 DPI`
-- `32pt` at `96 DPI`
-- `40pt` at `96 DPI`
-- `48pt` at `96 DPI`
+- 1x - `8pt @ 96 DPI`
+- 2x - `16pt @ 96 DPI`
+- 3x - `24pt @ 96 DPI`
+- 4x - `32pt @ 96 DPI`
+- 5x - `40pt @ 96 DPI`
+- 6x - `48pt @ 96 DPI`
 - ... etc.
 
 
@@ -144,6 +156,7 @@ You can add these fonts for use on a webpage by including the following code in 
 }
 ```
 
+</details>
 
 ## Direct Encodings
 Thanks to [slaimon](https://github.com/slaimon) and his converter script `src/encode_binary_array.py`, you can now directly store this font in a simple array of binary numbers. Because each character is only `15` pixels total, they fit well into a `16`-bit word. The number representing an ASCII character's glyph is indexed by that ASCII character's code.
@@ -170,6 +183,12 @@ Here is that array for the current iteration of the Microfont:
 }
 ```
 
+<br />
+<details>
+
+<summary>How To Use The Binary Array</summary>
+
+### Decoding The Binary Array
 To learn how to decode each glyph, see the `decode_glyph()` function in `src/encode_binary_array.py`.
 
 To learn how to use the decoded glyph bitmap arrays, see the `print_bitmap()` function.
