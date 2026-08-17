@@ -1,7 +1,9 @@
-# 3x5 Microfont
-A Highly Legible 3x5 Pixel Font With Full ASCII Support
+<h1 align="center">3x5 Microfont</h1>
+<p align="center">A Highly Legible 3x5 Pixel Font With Full ASCII Support</p>
 
 <p align="center"><img src="docs/demo.png" width="400px" alt="A demo of every ASCII character."/></p>
+
+<p align="center"><a href="https://nimaid.itch.io/microfont">Itch.io Page</a></p>
 
 ## Examples
 <details>
@@ -90,7 +92,7 @@ python src/generate_1D.py --help
 python src/generate_2D.py --help
 ```
 
-## TrueType / WOFF / WOFF2 Fonts
+## Vector Fonts (TrueType / WOFF / WOFF2)
 Thanks to the freeware program [PixelForge](https://www.pixel-forge.com/), I was able to create two different versions of this bitmap font in `.ttf` format!
 
 Thanks to [Transfonter](https://transfonter.org/), I was able to convert the `.ttf` fonts into `.woff` and `.woff2` fonts, which are more suitable for web usage.
