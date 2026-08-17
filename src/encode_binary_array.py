@@ -116,7 +116,7 @@ def parse_args(args):
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
     parser.add_argument("-f", "--font", dest="font", type=str, required=False, default=DEFAULT_FONT_PATH,
-                        help=f"the path to the 1D font image to use [{Path(DEFAULT_FONT_PATH).relative_to(PATH)}]"
+                        help=f"the path to the 1D font image to use [\"{Path(DEFAULT_FONT_PATH).relative_to(PATH)}\"]"
                         )
     parser.add_argument("-o", "--output", dest="output", type=str, required=False, default=None,
                         help="output file for the look-up table [None, print only]")
