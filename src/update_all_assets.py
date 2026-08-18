@@ -188,7 +188,25 @@ def main(args):
     with open(readme_path, "w", newline='\n') as f:
         f.write(readme)
     
-    print("Updated readme")
+    print("Updated readme\n")
+    
+    # Convert proportional .ttf to .woff
+    proportional_ttf_path = Path(common.PATH, "Microfont.ttf")
+    common.convert_ttf(proportional_ttf_path, common.FontFormats.WOFF)
+    print("Updated proportional WOFF")
+    
+    # Convert proportional .ttf to .woff2
+    common.convert_ttf(proportional_ttf_path, common.FontFormats.WOFF2)
+    print("Updated proportional WOFF2")
+    
+    # Convert monospaced .ttf to .woff
+    proportional_ttf_path = Path(common.PATH, "Microfont-Mono.ttf")
+    common.convert_ttf(proportional_ttf_path, common.FontFormats.WOFF)
+    print("Updated monospaced WOFF")
+    
+    # Convert monospaced .ttf to .woff2
+    common.convert_ttf(proportional_ttf_path, common.FontFormats.WOFF2)
+    print("Updated monospaced WOFF2")
     
 
 if __name__ == "__main__":

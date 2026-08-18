@@ -82,7 +82,7 @@ y = (get_ascii_code(character) >> 4) * 5
 </details>
 
 ## Vector Fonts (TrueType / WOFF / WOFF2)
-Thanks to the freeware program [PixelForge](https://www.pixel-forge.com/), I was able to create two different versions of this bitmap font in `.ttf` format! And thanks to [Transfonter](https://transfonter.org/), I was also able to convert the `.ttf` fonts into `.woff` and `.woff2` fonts, which are more suitable for web usage.
+Thanks to the freeware program [PixelForge](https://www.pixel-forge.com/), I was able to create two different versions of this bitmap font in `.ttf` format! And thanks to [fontTools for Python](https://pypi.org/project/fonttools/), I was able to convert those into `.woff` and `.woff2` fonts, which are more suitable for web usage.
 
 Two different font styles are provided:
 - The `Microfont-Mono` font is a truly faithful recreation of the monospaced results you would normally get using this font programmatically from the sprite sheet.

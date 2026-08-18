@@ -4,12 +4,17 @@ from enum import Enum
 from pathlib import Path
 
 from PIL import Image, ImageColor
+from fontTools.ttLib import TTFont
 
 # Declare constants
 class TextAlign(Enum):
     FLUSH_LEFT = "left"
     CENTERED = "center"
     FLUSH_RIGHT = "right"
+
+class FontFormats(Enum):
+    WOFF = "woff"
+    WOFF2 = "woff2"
 
 PATH = Path(__file__).parent.parent.parent.resolve()
 
@@ -317,3 +322,18 @@ def create_binary_table_from_image(font_image, indent=True):
     test_binary_encoder_and_decoder(glyphs, glyph_size)
     
     return create_binary_table_from_glyph_bitmaps(glyphs, indent)
+
+# Convert a .ttf font into a different format
+# Outputs to the same path and name with the extension changed
+def convert_ttf(ttf_path, format):
+    if not format in FontFormats:
+        raise Exception("\"format\" is not a valid format")
+    
+    ttf_path = Path(ttf_path)
+    output_format = format.value
+    output_path = ttf_path.with_suffix("." + output_format)
+    
+    font = TTFont(ttf_path)
+    
+    font.flavor = output_format
+    font.save(output_path)
