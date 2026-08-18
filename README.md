@@ -79,31 +79,6 @@ x = (get_ascii_code(character) & 0b1111) * 3
 y = (get_ascii_code(character) >> 4) * 5
 ```
 
-### Example Code - Image Generators
-I have included two Python scripts named `src/generate_1D.py` and `src/generate_2D.py`. I used these to generate the example images.
-
-Both are tools with a command line interface that render text into images using a sprite sheet, however:
-- `src/generate_1D.py` uses `Microfont_1D.png`
-- `src/generate_2D.py` uses `Microfont_2D.png`
-
-All the functionality of these scripts is stored in `src/modules/common.py`, all the defaults are stored in `src/modules/defaults.py`, and the argument parser is stored in `src/modules/parsers.py`.
-
-To see the key differences between using the 1D and 2D sprite sheet, open `src/modules/common.py` and compare the following functions:
-- `validate_image_font_1d()` / `validate_image_font_2d()`
-- `image_font_char_size_1d()` / `image_font_char_size_2d()`
-- `get_glyph_position_1d()` / `get_glyph_position_1d()`
-
-To use the scripts, you need to install `Pillow`:
-```
-pip install Pillow
-```
-
-Then you can see how to use the scripts with:
-```
-python src/generate_1D.py --help
-python src/generate_2D.py --help
-```
-
 </details>
 
 ## Vector Fonts (TrueType / WOFF / WOFF2)
@@ -200,12 +175,40 @@ To learn how to decode each glyph, see the `decode_glyph_from_binary()` function
 
 To learn how to use the decoded glyph bitmap arrays, see the `print_bitmap()` function.
 
-If you want to run the script yourself, you need to install `Pillow`:
-```
-pip install Pillow
+</details>
+
+## Scripts
+This project has helper scripts to assist me in converting to the various formats when I need to update everything. 
+
+All the functionality of these scripts is stored in `src/modules/common.py`, all the defaults are stored in `src/modules/defaults.py`, and the argument parsers are stored in `src/modules/parsers.py`.
+
+Each script file listed below is a simple wrapper for functions and values defined in the above files.
+
+These scripts require [Python 3](https://www.python.org/) to be installed. Additionally, the following packages must installed via pip:
+```bash
+pip install Pillow fontTools brotli
 ```
 
-Then you can see how to use the script with:
+### Image Generators
+I have included two Python scripts named `src/generate_1D.py` and `src/generate_2D.py`. I used these to generate the example images.
+
+Both are tools with a command line interface that render text into images using a sprite sheet, however:
+- `src/generate_1D.py` uses `Microfont_1D.png`
+- `src/generate_2D.py` uses `Microfont_2D.png`
+
+To see the key differences between using the 1D and 2D sprite sheet, open `src/modules/common.py` and compare the following functions:
+- `validate_image_font_1d()` / `validate_image_font_2d()`
+- `image_font_char_size_1d()` / `image_font_char_size_2d()`
+- `get_glyph_position_1d()` / `get_glyph_position_2d()`
+
+You can see how to use the scripts with:
+```bash
+python src/generate_1D.py --help
+python src/generate_2D.py --help
 ```
+
+### Binary Array Converter
+To see how to use the script used to encode the font into a binary array:
+```bash
 python src/encode_binary_array.py --help
 ```
