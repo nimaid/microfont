@@ -53,7 +53,7 @@ Two different formats of bitmap font are provided:
 
 ### Calculating Glyph Position
 
-The layout of the images has been optimized to make converting from an ASCII character code to X and Y coordinates extremely simple.
+The layout of the sprite sheets has been optimized to make converting from an ASCII character code to X and Y coordinates extremely simple.
 
 All characters are `3` pixels wide by `5` pixels tall. The X and Y coordinates calculated below are for the **top left corner** of the desired glyph. So the full bounding box for any glyph is:
 ```
@@ -72,7 +72,7 @@ y = 0
 ```
 
 ### 2D Calculations
-These calculations work for `Microfont_2D.png`. While they are slightly more complex, they allow for the source image to be a more reasonable aspect ratio. The X coordinate is based on the low nibble of the character code and the Y coordinate is based on the high nibble.
+These calculations work for `Microfont_2D.png`. While they are slightly more complex, they allow for the sprite sheet to be a more reasonable aspect ratio. The X coordinate is based on the low nibble of the character code and the Y coordinate is based on the high nibble.
 
 ```
 x = (get_ascii_code(character) & 0b1111) * 3
@@ -82,9 +82,16 @@ y = (get_ascii_code(character) >> 4) * 5
 ### Example Code - Image Generators
 I have included two Python scripts named `src/generate_1D.py` and `src/generate_2D.py`. I used these to generate the example images.
 
-Both are tools with a command line interface that render text into images using a font image, however:
-- `src/generate_1D.py` demonstrates how to use `Microfont_1D.png`
-- `src/generate_2D.py` demonstrates how to use `Microfont_2D.png`
+Both are tools with a command line interface that render text into images using a sprite sheet, however:
+- `src/generate_1D.py` uses `Microfont_1D.png`
+- `src/generate_2D.py` uses `Microfont_2D.png`
+
+All the functionality of these scripts is stored in `src/modules/common.py`, all the defaults are stored in `src/modules/defaults.py`, and the argument parser is stored in `src/modules/parsers.py`.
+
+To see the key differences between using the 1D and 2D sprite sheet, open `src/modules/common.py` and compare the following functions:
+- `validate_image_font_1d()` / `validate_image_font_2d()`
+- `image_font_char_size_1d()` / `image_font_char_size_2d()`
+- `get_glyph_position_1d()` / `get_glyph_position_1d()`
 
 To use the scripts, you need to install `Pillow`:
 ```
@@ -189,7 +196,7 @@ Here is that array for the current iteration of the Microfont:
 <summary>How To Use The Binary Array</summary>
 
 ### Decoding The Binary Array
-To learn how to decode each glyph, see the `decode_glyph()` function in `src/encode_binary_array.py`.
+To learn how to decode each glyph, see the `decode_glyph_from_binary()` function in `src/modules/common.py`.
 
 To learn how to use the decoded glyph bitmap arrays, see the `print_bitmap()` function.
 
