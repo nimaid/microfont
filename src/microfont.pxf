@@ -15,7 +15,7 @@ fixed_height_baseline_offset: 0
 creator_name: Ella Jameson (nimaid)
 font_family_name: Microfont
 font_sub_family_name: Regular
-version: Version 1.2
+version: Version 1.3
 font_url: https://github.com/nimaid/microfont
 license: Creative Commons Zero (CC0)
 license_url: https://creativecommons.org/publicdomain/zero/1.0/
@@ -449,7 +449,7 @@ glyphs:
 		auto_update_advance: true
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 1 0, 2 1, 2 2, 1 2, 2 3, 0 3, 1 4, 
+		pixels: 1 2, 2 3, 0 2, 2 1, 1 3, 0 0, 2 2, 1 0, 
 	104:
 		advance: 4
 		auto_update_advance: true
