@@ -12,8 +12,9 @@
 
 <br />
 
-<p align="center">The classic pangram about a quick brown fox.</p>
-<p align="center"><img src="docs/pangram.png" width="400px" alt="The classic pangram about a quick brown fox."/></p>
+<p align="center">A strange headline about undead horse terrorists and baby zebra surgery.</p>
+<p align="center">(Contains all uppercase and lowercase letters.)</p>
+<p align="center"><img src="docs/pangram.png" width="400px" alt="Angry Buzzing Citizens Denounced Equine Federal Government Hijackers In July, Keeping Local Militias Near Our Public Quarters, Rapidly Silencing Toxic Underworld Violence Without Xenografting Young Zebras."/></p>
 
 <br />
 

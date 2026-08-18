@@ -76,7 +76,7 @@ def main(args):
     
     # Render pangram image
     common.render_image_font(
-        text="THE QUICK BROWN FOX\nJUMPS OVER THE\nLAZY DOG\n\nthe quick brown fox\njumps over\nthe lazy dog",
+        text="Angry Buzzing Citizens\nDenounced Equine Federal\nGovernment Hijackers In July,\nKeeping Local Militias\nNear Our Public Quarters,\nRapidly Silencing Toxic\nUnderworld Violence Without\nXenografting Young Zebras.",
         font_image=font_image_1d_png,
         validate_func=common.validate_image_font_1d,
         size_func=common.image_font_char_size_1d,
