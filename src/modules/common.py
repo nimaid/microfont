@@ -3,7 +3,7 @@ import sys
 from enum import Enum
 from pathlib import Path
 
-from PIL import Image, ImageColor
+from PIL import Image, ImageColor, ImageDraw, ImageFont
 from fontTools.ttLib import TTFont
 
 # Declare constants
@@ -16,17 +16,30 @@ class FontFormats(Enum):
     WOFF = "woff"
     WOFF2 = "woff2"
 
+FONT_SIZE = 8
+CHAR_SIZE = (3, 5)
+CHAR_OFFSET = (0, -1)
+
 PATH = Path(__file__).parent.parent.parent.resolve()
 
 FONT_PATHS = {
     "1d": {
         "png": Path(PATH, "Microfont_1D.png"),
-        "bmp": Path(PATH, "Microfont_1D.bmp")
+        "bmp": Path(PATH, "Microfont_1D.bmp"),
     },
     "2d": {
         "png": Path(PATH, "Microfont_2D.png"),
-        "bmp": Path(PATH, "Microfont_2D.bmp")
+        "bmp": Path(PATH, "Microfont_2D.bmp"),
     },
+    "ttf": {
+        "proportional": Path(PATH, "Microfont.ttf"),
+        "monospaced": Path(PATH, "Microfont-Mono.ttf"),
+    },
+}
+
+FONTS = {
+    "proportional": ImageFont.truetype(FONT_PATHS["ttf"]["proportional"], FONT_SIZE),
+    "monospaced": ImageFont.truetype(FONT_PATHS["ttf"]["monospaced"], FONT_SIZE),
 }
 
 
@@ -337,3 +350,32 @@ def convert_ttf(ttf_path, format):
     
     font.flavor = output_format
     font.save(output_path)
+
+
+# Get a glyph's (transparent) image from a TTF font
+def get_glyph_from_ttf(font, char, char_size, char_offset=(0,0), color=(255,255,255,255)):
+    glyph = Image.new("RGBA", char_size, color=(255,255,255,0))
+    
+    draw = ImageDraw.Draw(glyph)
+    draw.text(char_offset, char, fill=color, font=font)
+    
+    return glyph
+
+
+# Create a transparent 1D font image from a TTF file
+def create_1d_font_from_ttf(font, char_size, char_offset=(0,0), color=(255,255,255,255)):
+    char_width, char_height = char_size
+    
+    size = (char_width * 128, char_height)
+    
+    image = Image.new("RGBA", size, color=(255,255,255,0))
+    for char_code in range(ord(" "), 127):
+        char = chr(char_code)
+        
+        paste_position = get_glyph_position_1d(char, char_size)
+
+        glyph_image = get_glyph_from_ttf(font, char, char_size, char_offset, color)
+        
+        image.paste(glyph_image, paste_position)
+    
+    return image

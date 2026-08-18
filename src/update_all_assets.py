@@ -8,12 +8,16 @@ from PIL import Image, ImageColor
 
 from modules import common, defaults
 
-
 def main(args):
     print()
     
+    # Make 1D PNG from monospaced TTF
+    font_image_1d_png = common.create_1d_font_from_ttf(common.FONTS["monospaced"], common.CHAR_SIZE, char_offset=common.CHAR_OFFSET)
+    
+    font_image_1d_png.save(common.FONT_PATHS["1d"]["png"])
+    print("Updated 1D PNG")
+    
     # Make 2D PNG from 1D PNG
-    font_image_1d_png = Image.open(common.FONT_PATHS["1d"]["png"])
     font_image_2d_png = common.make_2d_font_from_1d_font(font_image_1d_png)
     
     font_image_2d_png.save(common.FONT_PATHS["2d"]["png"])
