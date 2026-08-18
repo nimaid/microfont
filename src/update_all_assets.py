@@ -13,13 +13,11 @@ def main(args):
     
     # Make 1D PNG from monospaced TTF
     font_image_1d_png = common.create_1d_font_from_ttf(common.FONTS["monospaced"], common.CHAR_SIZE, char_offset=common.CHAR_OFFSET)
-    
     font_image_1d_png.save(common.FONT_PATHS["1d"]["png"])
     print("Updated 1D PNG")
     
     # Make 2D PNG from 1D PNG
     font_image_2d_png = common.make_2d_font_from_1d_font(font_image_1d_png)
-    
     font_image_2d_png.save(common.FONT_PATHS["2d"]["png"])
     print("Updated 2D PNG")
     
@@ -38,7 +36,7 @@ def main(args):
     # Render demo image
     default_text_color = ImageColor.getrgb(defaults.DEFAULT_TEXT_COLOR)
     default_background_color = ImageColor.getrgb(defaults.DEFAULT_BACKGROUND_COLOR)
-    common.render_image_font(
+    base_image = common.render_image_font(
         text="3x5 Microfont by\nElla Jameson (nimaid)\n\nABCDEFGHIJKLM\nabcdefghijklm\n\nNOPQRSTUVWXYZ\nnopqrstuvwxyz\n\n`1234567890-=[]\\;',./\n~!@#$%^&*()_+{}|:\"<>?",
         font_image=font_image_1d_png,
         validate_func=common.validate_image_font_1d,
@@ -50,7 +48,30 @@ def main(args):
         align=common.TextAlign.CENTERED,
         scale=defaults.DEFAULT_SCALE,
         spacing=defaults.DEFAULT_SPACING
-    ).save(Path(common.PATH, "docs", "demo.png"))
+    )
+    
+    logo_text = "   by __      __\n     /  \\    /  \\\n    / /\\ \\  / /\\ \\\n   /  \\X\\ \\ \\ \\X\\ \\\n  / /\\ \\X\\ \\ \\ \\X\\ \\\n / /X/  \\X\\ \\ \\ \\X\\ \\\n/ /X/ /\\ \\X\\ \\ \\ \\X\\ \\\n\\ \\X\\ \\ \\ \\X\\ \\/ /X/ /\n \\ \\X\\ \\ \\ \\X\\  /X/ /\n  \\ \\X\\ \\ \\ \\X\\ \\/ /\n   \\ \\X\\ \\ \\ \\X\\  /\n    \\ \\/ /  \\ \\/ /\n     \\__/    \\__/imaid"
+    logo_image = common.render_image_font(
+        text=logo_text,
+        font_image=font_image_1d_png,
+        validate_func=common.validate_image_font_1d,
+        size_func=common.image_font_char_size_1d,
+        position_func=common.get_glyph_position_1d,
+        color=default_text_color,
+        background=None,
+        padding=0,
+        align=common.TextAlign.FLUSH_LEFT,
+        scale=1,
+        spacing=defaults.DEFAULT_SPACING
+    )
+    
+    logo_padding = 32
+    x = (base_image.width - logo_image.width) - logo_padding
+    y = (base_image.height - logo_image.height) - logo_padding
+    base_image.paste(logo_image, (x, y), mask=logo_image)
+    
+    base_image.save(Path(common.PATH, "docs", "demo.png"))
+    base_image.convert("RGB").save(Path(temp_folder, "demo.jpg"))
     print("Updated demo image")
     
     # Render pangram image
@@ -153,7 +174,7 @@ def main(args):
     
     # Render logo image
     common.render_image_font(
-        text="   by __      __\n     /  \\    /  \\\n    / /\\ \\  / /\\ \\\n   /  \\X\\ \\ \\ \\X\\ \\\n  / /\\ \\X\\ \\ \\ \\X\\ \\\n / /X/  \\X\\ \\ \\ \\X\\ \\\n/ /X/ /\\ \\X\\ \\ \\ \\X\\ \\\n\\ \\X\\ \\ \\ \\X\\ \\/ /X/ /\n \\ \\X\\ \\ \\ \\X\\  /X/ /\n  \\ \\X\\ \\ \\ \\X\\ \\/ /\n   \\ \\X\\ \\ \\ \\X\\  /\n    \\ \\/ /  \\ \\/ /\n     \\__/    \\__/imaid",
+        text=logo_text,
         font_image=font_image_1d_png,
         validate_func=common.validate_image_font_1d,
         size_func=common.image_font_char_size_1d,
