@@ -4,7 +4,7 @@ import sys
 
 from pathlib import Path
 
-from PIL import Image, ImageColor
+from PIL import Image, ImageColor, ImageFont
 
 from modules import common, defaults
 
@@ -12,7 +12,8 @@ def main(args):
     print()
     
     # Make 1D PNG from monospaced TTF
-    font_image_1d_png = common.create_1d_font_from_ttf(common.FONTS["monospaced"], common.CHAR_SIZE, char_offset=common.CHAR_OFFSET)
+    font_monospaced = ImageFont.truetype(common.FONT_PATHS["ttf"]["monospaced"], common.FONT_SIZE)
+    font_image_1d_png = common.create_1d_font_from_ttf(font_monospaced, common.FONT_CHAR_SIZE, char_line_spacing=common.FONT_CHAR_LINE_SPACING)
     font_image_1d_png.save(common.FONT_PATHS["1d"]["png"])
     print("Updated 1D PNG")
     
@@ -75,12 +76,12 @@ def main(args):
     print("Updated demo image")
     
     # Render pangram image
-    common.render_image_font(
+    font_proportional = ImageFont.truetype(common.FONT_PATHS["ttf"]["proportional"], common.FONT_SIZE)
+    common.render_ttf_font(
         text="Angry Buzzing Citizens\nDenounced Equine Federal\nGovernment Hijackers In July,\nKeeping Local Militias\nNear Our Public Quarters,\nRapidly Silencing Toxic\nUnderworld Violence Without\nXenografting Young Zebras.",
-        font_image=font_image_1d_png,
-        validate_func=common.validate_image_font_1d,
-        size_func=common.image_font_char_size_1d,
-        position_func=common.get_glyph_position_1d,
+        font=font_proportional,
+        char_size=common.FONT_CHAR_SIZE,
+        char_line_spacing=common.FONT_CHAR_LINE_SPACING,
         color=default_text_color,
         background=default_background_color,
         padding=defaults.DEFAULT_PADDING,
@@ -91,36 +92,23 @@ def main(args):
     print("Updated pangram image")
     
     # Render poem image
-    poem_text = "I met a traveller from an antique land\nWho said: Two vast and trunkless legs of stone\nStand in the desert. Near them, on the sand,\nHalf sunk, a shattered visage lies, whose frown,\nAnd wrinkled lip, and sneer of cold command,\nTell that its sculptor well those passions read\nWhich yet survive, stamped on these lifeless things,\nThe hand that mocked them and the heart that fed:\nAnd on the pedestal these words appear:\n\"My name is Ozymandias, king of kings:\nLook on my works, ye Mighty, and despair!\"\nNothing beside remains. Round the decay\nOf that colossal wreck, boundless and bare\nThe lone and level sands stretch far away."
-    common.render_image_font(
-        text=poem_text,
-        font_image=font_image_1d_png,
-        validate_func=common.validate_image_font_1d,
-        size_func=common.image_font_char_size_1d,
-        position_func=common.get_glyph_position_1d,
+    poem_image = common.render_ttf_font(
+        text="I met a traveller from an antique land\nWho said: Two vast and trunkless legs of stone\nStand in the desert. Near them, on the sand,\nHalf sunk, a shattered visage lies, whose frown,\nAnd wrinkled lip, and sneer of cold command,\nTell that its sculptor well those passions read\nWhich yet survive, stamped on these lifeless things,\nThe hand that mocked them and the heart that fed:\nAnd on the pedestal these words appear:\n\"My name is Ozymandias, king of kings:\nLook on my works, ye Mighty, and despair!\"\nNothing beside remains. Round the decay\nOf that colossal wreck, boundless and bare\nThe lone and level sands stretch far away.",
+        font=font_proportional,
+        char_size=common.FONT_CHAR_SIZE,
+        char_line_spacing=common.FONT_CHAR_LINE_SPACING,
         color=default_text_color,
         background=default_background_color,
         padding=defaults.DEFAULT_PADDING,
         align=common.TextAlign.FLUSH_LEFT,
         scale=defaults.DEFAULT_SCALE,
         spacing=defaults.DEFAULT_SPACING
-    ).save(Path(common.PATH, "docs", "poem.png"))
+    )
+    poem_image.save(Path(common.PATH, "docs", "poem.png"))
     print("Updated poem image")
     
     # Render poem image (Itch.io)
-    common.render_image_font(
-        text=poem_text,
-        font_image=font_image_1d_png,
-        validate_func=common.validate_image_font_1d,
-        size_func=common.image_font_char_size_1d,
-        position_func=common.get_glyph_position_1d,
-        color=default_text_color,
-        background=default_background_color,
-        padding=defaults.DEFAULT_PADDING,
-        align=common.TextAlign.FLUSH_LEFT,
-        scale=17,
-        spacing=defaults.DEFAULT_SPACING
-    ).save(Path(temp_folder, "poem.png"))
+    poem_image.resize(tuple((x * 17) // defaults.DEFAULT_SCALE for x in poem_image.size), resample=Image.Resampling.NEAREST).save(Path(temp_folder, "poem.png"))
     print("Updated poem image (Itch.io)")
     
     # Render code image
@@ -140,36 +128,23 @@ def main(args):
     print("Updated code image")
     
     # Render road image
-    road_text = "Two roads diverged in a yellow wood,\nAnd sorry I could not travel both\nAnd be one traveler, long I stood\nAnd looked down one as far as I could\nTo where it bent in the undergrowth;\n\nThen took the other, as just as fair,\nAnd having perhaps the better claim,\nBecause it was grassy and wanted wear;\nThough as for that the passing there\nHad worn them really about the same,\n\nAnd both that morning equally lay\nIn leaves no step had trodden black.\nOh, I kept the first for another day!\nYet knowing how way leads on to way,\nI doubted if I should ever come back.\n\nI shall be telling this with a sigh\nSomewhere ages and ages hence:\nTwo roads diverged in a wood, and I-\nI took the one less traveled by,\nAnd that has made all the difference."
-    common.render_image_font(
-        text=road_text,
-        font_image=font_image_1d_png,
-        validate_func=common.validate_image_font_1d,
-        size_func=common.image_font_char_size_1d,
-        position_func=common.get_glyph_position_1d,
+    road_image = common.render_ttf_font(
+        text="Two roads diverged in a yellow wood,\nAnd sorry I could not travel both\nAnd be one traveler, long I stood\nAnd looked down one as far as I could\nTo where it bent in the undergrowth;\n\nThen took the other, as just as fair,\nAnd having perhaps the better claim,\nBecause it was grassy and wanted wear;\nThough as for that the passing there\nHad worn them really about the same,\n\nAnd both that morning equally lay\nIn leaves no step had trodden black.\nOh, I kept the first for another day!\nYet knowing how way leads on to way,\nI doubted if I should ever come back.\n\nI shall be telling this with a sigh\nSomewhere ages and ages hence:\nTwo roads diverged in a wood, and I-\nI took the one less traveled by,\nAnd that has made all the difference.",
+        font=font_proportional,
+        char_size=common.FONT_CHAR_SIZE,
+        char_line_spacing=common.FONT_CHAR_LINE_SPACING,
         color=default_text_color,
         background=default_background_color,
         padding=defaults.DEFAULT_PADDING,
         align=common.TextAlign.FLUSH_LEFT,
         scale=defaults.DEFAULT_SCALE,
         spacing=defaults.DEFAULT_SPACING
-    ).save(Path(common.PATH, "docs", "road.png"))
+    )
+    road_image.save(Path(common.PATH, "docs", "road.png"))
     print("Updated road image")
     
     # Render road image (Itch.io)
-    common.render_image_font(
-        text=road_text,
-        font_image=font_image_1d_png,
-        validate_func=common.validate_image_font_1d,
-        size_func=common.image_font_char_size_1d,
-        position_func=common.get_glyph_position_1d,
-        color=default_text_color,
-        background=default_background_color,
-        padding=defaults.DEFAULT_PADDING,
-        align=common.TextAlign.FLUSH_LEFT,
-        scale=14,
-        spacing=defaults.DEFAULT_SPACING
-    ).save(Path(temp_folder, "road.png"))
+    road_image.resize(tuple((x * 14) // defaults.DEFAULT_SCALE for x in road_image.size), resample=Image.Resampling.NEAREST).save(Path(temp_folder, "road.png"))
     print("Updated road image (Itch.io)")
     
     # Render logo image

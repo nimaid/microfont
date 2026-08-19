@@ -23,6 +23,9 @@ def main(args):
         spacing=parsed_args.spacing
     )
     
+    if parsed_args.output.suffix.lower() in common.RGB_ONLY_FORMATS:
+        output_image = output_image.convert("RGB")
+    
     output_image.save(parsed_args.output)
     print(f"Saved image to \"{parsed_args.output}\"")
 

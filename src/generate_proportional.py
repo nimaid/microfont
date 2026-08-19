@@ -7,14 +7,20 @@ from modules import common, defaults, parsers
 
 def main(args):
     print()
-    parsed_args = parsers.parse_args_generate(args, common.FONT_PATHS["1d"]["png"])
+    parsed_args = parsers.parse_args_proportional(
+        args=args,
+        default_font_path=common.FONT_PATHS["ttf"]["proportional"],
+        default_font_size=common.FONT_SIZE,
+        default_font_char_width=common.FONT_CHAR_SIZE[0],
+        default_font_char_height=common.FONT_CHAR_SIZE[1],
+        default_font_char_line_spacing=common.FONT_CHAR_LINE_SPACING
+    )
     
-    output_image = common.render_image_font(
+    output_image = common.render_ttf_font(
         text=parsed_args.text,
-        font_image=parsed_args.font,
-        validate_func=common.validate_image_font_1d,
-        size_func=common.image_font_char_size_1d,
-        position_func=common.get_glyph_position_1d,
+        font=parsed_args.font,
+        char_size=parsed_args.font_char_size,
+        char_line_spacing=parsed_args.font_char_line_spacing,
         color=parsed_args.color,
         background=parsed_args.background,
         padding=parsed_args.padding,

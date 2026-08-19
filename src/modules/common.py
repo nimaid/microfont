@@ -17,8 +17,8 @@ class FontFormats(Enum):
     WOFF2 = "woff2"
 
 FONT_SIZE = 8
-CHAR_SIZE = (3, 5)
-CHAR_OFFSET = (0, -1)
+FONT_CHAR_LINE_SPACING = 1
+FONT_CHAR_SIZE = (3, 5)
 
 PATH = Path(__file__).parent.parent.parent.resolve()
 
@@ -37,11 +37,7 @@ FONT_PATHS = {
     },
 }
 
-FONTS = {
-    "proportional": ImageFont.truetype(FONT_PATHS["ttf"]["proportional"], FONT_SIZE),
-    "monospaced": ImageFont.truetype(FONT_PATHS["ttf"]["monospaced"], FONT_SIZE),
-}
-
+RGB_ONLY_FORMATS = (".jpg", ".jpeg", ".bmp", ".eps", ".ppm", ".pgm", ".pbm")
 
 # Replaces all pixels in an Image with a specific color while still preserving transparency
 def image_alpha_colorfill(image, color):
@@ -119,6 +115,26 @@ def get_glyph_position_2d(char, char_size):
     return x, y
 
 
+# Gets the dimensions for some text rendered with monospaced characters
+def get_text_image_size(text, char_size, spacing=1):
+    char_width, char_height = char_size
+    
+    text_width = 0
+    text_height = 0
+    for line in text.split("\n"):
+        line_width = len(line)
+        
+        if line_width > text_width:
+            text_width = line_width
+        
+        text_height += 1
+    
+    width = (char_width * text_width) + (spacing * (text_width-1))
+    height = (char_height * text_height) + (spacing * (text_height-1))
+    
+    return (width, height)
+
+
 # Renders text with an Image font into an output Image
 def render_image_font(text,
                       font_image,
@@ -130,7 +146,8 @@ def render_image_font(text,
                       padding=1,
                       align=TextAlign.FLUSH_LEFT,
                       scale=1,
-                      spacing=1):
+                      spacing=1
+                     ):
     function_name = sys._getframe().f_code.co_name
     if len(text) < 1:
         raise Exception(f"{function_name}() requires a non-zero length string as it's 'text'")
@@ -146,20 +163,10 @@ def render_image_font(text,
     else:
         font_image = scaled_font_image
     
-    char_width, char_height = size_func(font_image)
+    char_size = size_func(font_image)
+    char_width, char_height = char_size
     
-    text_width = 0
-    text_height = 0
-    for line in text.split("\n"):
-        line_width = len(line)
-        
-        if line_width > text_width:
-            text_width = line_width
-        
-        text_height += 1
-    
-    width = (char_width * text_width) + (spacing * (text_width-1))
-    height = (char_height * text_height) + (spacing * (text_height-1))
+    width, height = get_text_image_size(text=text, char_size=char_size, spacing=spacing)
     
     text_image = Image.new("RGBA", (width, height))
     
@@ -353,17 +360,17 @@ def convert_ttf(ttf_path, format):
 
 
 # Get a glyph's (transparent) image from a TTF font
-def get_glyph_from_ttf(font, char, char_size, char_offset=(0,0), color=(255,255,255,255)):
+def get_glyph_from_ttf(font, char, char_size, char_line_spacing, color=(255,255,255,255)):
     glyph = Image.new("RGBA", char_size, color=(255,255,255,0))
     
     draw = ImageDraw.Draw(glyph)
-    draw.text(char_offset, char, fill=color, font=font)
+    draw.text((0, -char_line_spacing), char, fill=color, font=font)
     
     return glyph
 
 
 # Create a transparent 1D font image from a TTF file
-def create_1d_font_from_ttf(font, char_size, char_offset=(0,0), color=(255,255,255,255)):
+def create_1d_font_from_ttf(font, char_size, char_line_spacing, color=(255,255,255,255)):
     char_width, char_height = char_size
     
     size = (char_width * 128, char_height)
@@ -374,8 +381,49 @@ def create_1d_font_from_ttf(font, char_size, char_offset=(0,0), color=(255,255,2
         
         paste_position = get_glyph_position_1d(char, char_size)
 
-        glyph_image = get_glyph_from_ttf(font, char, char_size, char_offset, color)
+        glyph_image = get_glyph_from_ttf(font, char, char_size, char_line_spacing, color)
         
         image.paste(glyph_image, paste_position)
     
     return image
+
+# Render text onto a (transparent) image using a TTF font
+def render_ttf_font(text,
+                    font,
+                    char_size,
+                    char_line_spacing,
+                    color=(0,0,0,255),
+                    background=(0,0,0,0),
+                    padding=1,
+                    align=TextAlign.FLUSH_LEFT,
+                    scale=1,
+                    spacing=1
+                   ):
+    if len(color) == 3:
+        color += (255,)
+    
+    if len(background) == 3:
+        background += (255,)
+    
+    text_size = get_text_image_size(text=text, char_size=char_size, spacing=spacing)
+    
+    text_image = Image.new("RGBA", text_size, color=(0,0,0,0))
+    
+    line_spacing = spacing - char_line_spacing
+    
+    draw = ImageDraw.Draw(text_image)
+    draw.text((0, -char_line_spacing), text, fill=color, font=font, spacing=line_spacing, align=align.value)
+    
+    text_box = text_image.getbbox()
+    if text_box:
+        text_image = text_image.crop(text_box)
+    
+    output_size = (text_image.width + (padding*2), text_image.height + (padding*2))
+    output_image = Image.new("RGBA", output_size, color=background)
+    
+    output_image.paste(text_image, (padding,padding), text_image)
+    
+    if scale > 1:
+        output_image = output_image.resize((output_image.width * scale, output_image.height * scale), resample=Image.Resampling.NEAREST)
+    
+    return output_image
