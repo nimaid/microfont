@@ -11,8 +11,9 @@ from modules import common, defaults
 def main(args):
     print()
     
-    # Fix proportional .ttf scaling (PixelForge error)
-    common.fix_pixelforge_ttf_scaling(common.FONT_PATHS["raw_ttf"]["proportional"], common.FONT_PATHS["ttf"]["proportional"])
+    # Fix proportional .ttf scaling (PixelForge error) and update copyright year
+    common.fix_pixelforge_ttf_scaling(common.FONT_PATHS["raw_ttf"]["proportional"], common.FONT_PATHS["scaled_raw_ttf"]["proportional"])
+    common.update_pixelforge_ttf_copyright_year(common.FONT_PATHS["scaled_raw_ttf"]["proportional"], common.FONT_PATHS["ttf"]["proportional"])
     print("Updated proportional TTF")
     
     # Convert proportional .ttf to .woff
@@ -23,8 +24,9 @@ def main(args):
     common.convert_ttf(common.FONT_PATHS["ttf"]["proportional"], common.FontFormats.WOFF2)
     print("Updated proportional WOFF2")
     
-    # Fix monospaced .ttf scaling (PixelForge error)
-    common.fix_pixelforge_ttf_scaling(common.FONT_PATHS["raw_ttf"]["monospaced"], common.FONT_PATHS["ttf"]["monospaced"])
+    # Fix monospaced .ttf scaling (PixelForge error) and update copyright year
+    common.fix_pixelforge_ttf_scaling(common.FONT_PATHS["raw_ttf"]["monospaced"], common.FONT_PATHS["scaled_raw_ttf"]["monospaced"])
+    common.update_pixelforge_ttf_copyright_year(common.FONT_PATHS["scaled_raw_ttf"]["monospaced"], common.FONT_PATHS["ttf"]["monospaced"])
     print("Updated monospaced TTF")
     
     # Convert monospaced .ttf to .woff

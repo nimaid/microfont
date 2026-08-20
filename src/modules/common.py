@@ -2,6 +2,7 @@ import sys
 
 from enum import Enum
 from pathlib import Path
+from datetime import datetime
 
 from PIL import Image, ImageColor, ImageDraw, ImageFont
 from fontTools.ttLib import TTFont
@@ -39,6 +40,10 @@ FONT_PATHS = {
         "monospaced": Path(PATH, "Microfont-Mono.ttf"),
     },
     "raw_ttf": {
+        "proportional": Path(PATH, "temp", "microfont.ttf"),
+        "monospaced": Path(PATH, "temp", "microfont_mono.ttf"),
+    },
+    "scaled_raw_ttf": {
         "proportional": Path(PATH, "temp", "Microfont.ttf"),
         "monospaced": Path(PATH, "temp", "Microfont-Mono.ttf"),
     },
@@ -446,5 +451,31 @@ def fix_pixelforge_ttf_scaling(font_in_path, font_out_path, scale=0.75):
     
     head = font['head']
     head.unitsPerEm = round(head.unitsPerEm * scale)
+    
+    font.save(font_out_path)
+
+
+# Update the year in the copyright text in PixelForge TTF files
+def update_pixelforge_ttf_copyright_year(font_in_path, font_out_path, year=None):
+    font_in_path = Path(font_in_path)
+    font_out_path = Path(font_out_path)
+    
+    if year == None:
+        year = str(datetime.now().year)
+    else:
+        year = str(year)
+    
+    font = TTFont(font_in_path)
+    
+    name_table = font["name"]
+    for record in name_table.names:
+        if record.nameID == 0:
+            encoding = record.getEncoding()
+            copyright = record.string.decode(encoding)
+            
+            copyright = copyright[:-4] + year
+            
+            copyright = copyright.encode(encoding)
+            record.string = copyright
     
     font.save(font_out_path)
