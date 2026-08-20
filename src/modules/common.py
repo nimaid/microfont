@@ -351,14 +351,15 @@ def create_binary_table_from_image(font_image, indent=True):
     return create_binary_table_from_glyph_bitmaps(glyphs, indent)
 
 # Convert a .ttf font into a different format
-# Outputs to the same path and name with the extension changed
-def convert_ttf(ttf_path, format):
+def convert_ttf(ttf_path, format, output_path=None):
     if not format in FontFormats:
         raise Exception("\"format\" is not a valid format")
     
     ttf_path = Path(ttf_path)
     output_format = format.value
-    output_path = ttf_path.with_suffix("." + output_format)
+    
+    if output_path == None:
+        output_path = ttf_path.with_suffix("." + output_format)
     
     font = TTFont(ttf_path)
     
@@ -439,6 +440,7 @@ def render_ttf_font(text,
 # Fixes the scaling on PixelForge TTF fonts
 def fix_pixelforge_ttf_scaling(font_in_path, font_out_path, scale=0.75):
     font_in_path = Path(font_in_path)
+    font_out_path = Path(font_out_path)
     
     font = TTFont(font_in_path)
     

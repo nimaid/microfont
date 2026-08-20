@@ -203,8 +203,8 @@ def parse_args_proportional(args, default_font_path, default_font_size, default_
     return parsed_args
 
 
-# Parse arguments for converters
-def parse_args_convert(args, default_font_in_path, default_font_out_path, description):
+# Parse arguments for image converters
+def parse_args_convert_image(args, default_font_in_path, default_font_out_path, description):
     parser = argparse.ArgumentParser(
         description=f"{description}\n\n"
                     f"Valid parameters are shown in {{braces}}.\n"
@@ -229,6 +229,45 @@ def parse_args_convert(args, default_font_in_path, default_font_out_path, descri
     
     parsed_args.output = Path(parsed_args.output)
 
+    return parsed_args
+
+
+# Parse arguments for TTF converters
+def parse_args_convert_ttf(args, get_output_format, description):
+    parser = argparse.ArgumentParser(
+        description=f"{description}\n\n"
+                    f"Valid parameters are shown in {{braces}}.\n"
+                    f"Default parameters are shown in [brackets].",
+        formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    parser.add_argument("-f", "--font", dest="font", type=str, required=True,
+                        help=f"the path to the TTF to convert"
+                       )
+    
+    parser.add_argument("-o", "--output", dest="output", type=str, required=True,
+                        help=f"the path and filename of the desired output font file"
+                       )
+
+    parsed_args = parser.parse_args(args)
+    
+    # Interpret string arguments
+    font = Path(parsed_args.font)
+    if not font.is_file():
+        parser.error(f"the file \"{font}\" does not exist")
+    parsed_args.font = font
+    
+    output = Path(parsed_args.output)
+    if font.resolve(strict=False) == output.resolve(strict=False):
+        parser.error("the output font file must be different than the input one")
+    parsed_args.output = output
+    
+    if get_output_format:
+        extension = parsed_args.output.suffix.lower()
+        valid_extensions = [("." + x.value) for x in common.FontFormats]
+        if extension not in valid_extensions:
+            parser.error(f"the output extension \"{extension}\" is not valid. Options: \"" + "\", \"".join(valid_extensions) + "\"")
+        parsed_args.output_format = common.FontFormats(extension.strip("."))
+    
     return parsed_args
 
 

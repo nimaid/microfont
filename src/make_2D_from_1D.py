@@ -7,7 +7,7 @@ from modules import common, parsers
 
 def main(args):
     print()
-    parsed_args = parsers.parse_args_convert(args, common.FONT_PATHS["1d"]["png"], common.FONT_PATHS["2d"]["png"],
+    parsed_args = parsers.parse_args_convert_image(args, common.FONT_PATHS["1d"]["png"], common.FONT_PATHS["2d"]["png"],
                                              "Renders a 1D font image into a 2D font Image.\n"
                                              "Used to update the 2D sprite sheets automatically."
                                             )

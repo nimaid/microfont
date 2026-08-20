@@ -7,7 +7,7 @@ from modules import common, parsers
 
 def main(args):
     print()
-    parsed_args = parsers.parse_args_convert(args, common.FONT_PATHS["1d"]["png"], common.FONT_PATHS["1d"]["bmp"],
+    parsed_args = parsers.parse_args_convert_image(args, common.FONT_PATHS["1d"]["png"], common.FONT_PATHS["1d"]["bmp"],
                                              "Converts a transparent PNG font image into a black-and-white BMP font image.\n"
                                              "Used to update the BMP sprite sheets automatically."
                                             )
