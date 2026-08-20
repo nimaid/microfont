@@ -16,9 +16,12 @@ class FontFormats(Enum):
     WOFF = "woff"
     WOFF2 = "woff2"
 
-FONT_SIZE = 8
 FONT_CHAR_LINE_SPACING = 1
-FONT_CHAR_SIZE = (3, 5)
+FONT_CHAR_WIDTH = 3
+FONT_CHAR_HEIGHT = 5
+
+FONT_CHAR_SIZE = (FONT_CHAR_WIDTH, FONT_CHAR_HEIGHT)
+FONT_SIZE = FONT_CHAR_HEIGHT + FONT_CHAR_LINE_SPACING
 
 PATH = Path(__file__).parent.parent.parent.resolve()
 
@@ -34,6 +37,10 @@ FONT_PATHS = {
     "ttf": {
         "proportional": Path(PATH, "Microfont.ttf"),
         "monospaced": Path(PATH, "Microfont-Mono.ttf"),
+    },
+    "raw_ttf": {
+        "proportional": Path(PATH, "temp", "Microfont.ttf"),
+        "monospaced": Path(PATH, "temp", "Microfont-Mono.ttf"),
     },
 }
 
@@ -427,3 +434,15 @@ def render_ttf_font(text,
         output_image = output_image.resize((output_image.width * scale, output_image.height * scale), resample=Image.Resampling.NEAREST)
     
     return output_image
+
+
+# Fixes the scaling on PixelForge TTF fonts
+def fix_pixelforge_ttf_scaling(font_in_path, font_out_path, scale=0.75):
+    font_in_path = Path(font_in_path)
+    
+    font = TTFont(font_in_path)
+    
+    head = font['head']
+    head.unitsPerEm = round(head.unitsPerEm * scale)
+    
+    font.save(font_out_path)

@@ -101,19 +101,18 @@ Two different font styles are provided:
 <summary>How To Use The Vector Fonts</summary>
 
 ### Optimal Text Sizes
-Because the height of the characters is `5` pixels with `1` pixel between rows, PixelForge recommends using multiples of `6pt @ 96 DPI` for best results. In theory, that should render the font pixel-perfectly without antialiasing. 
-
-However, in practice this behavior actually occurs at multiples of `8pt @ 96 DPI`. I don't know why this is, I can only assume it's a bug with PixelForge.
+Because the height of the characters is `5` pixels with `1` pixel between rows, PixelForge recommend using multiples of `6pt @ 96 DPI` for best results. That will render the font pixel-perfectly without antialiasing. 
 
 **So, for best results, use the following settings:**
-- 1x - `8pt @ 96 DPI`
-- 2x - `16pt @ 96 DPI`
-- 3x - `24pt @ 96 DPI`
-- 4x - `32pt @ 96 DPI`
-- 5x - `40pt @ 96 DPI`
-- 6x - `48pt @ 96 DPI`
+- 1x - `6pt @ 96 DPI`
+- 2x - `12pt @ 96 DPI`
+- 3x - `18pt @ 96 DPI`
+- 4x - `24pt @ 96 DPI`
+- 5x - `30pt @ 96 DPI`
+- 6x - `36pt @ 96 DPI`
 - ... etc.
 
+*(Note: Due to a bug in PixelForge, I have to use Python to change the Units Per Em value to 75% of the one PixelForge sets on export. Without this change, the suggested font sizes are incorrect.)*
 
 ### Web Usage
 You can add these fonts for use on a webpage by including the following code in your CSS stylesheet:

@@ -11,6 +11,30 @@ from modules import common, defaults
 def main(args):
     print()
     
+    # Fix proportional .ttf scaling (PixelForge error)
+    common.fix_pixelforge_ttf_scaling(common.FONT_PATHS["raw_ttf"]["proportional"], common.FONT_PATHS["ttf"]["proportional"])
+    print("Updated proportional TTF")
+    
+    # Convert proportional .ttf to .woff
+    common.convert_ttf(common.FONT_PATHS["ttf"]["proportional"], common.FontFormats.WOFF)
+    print("Updated proportional WOFF")
+    
+    # Convert proportional .ttf to .woff2
+    common.convert_ttf(common.FONT_PATHS["ttf"]["proportional"], common.FontFormats.WOFF2)
+    print("Updated proportional WOFF2")
+    
+    # Fix monospaced .ttf scaling (PixelForge error)
+    common.fix_pixelforge_ttf_scaling(common.FONT_PATHS["raw_ttf"]["monospaced"], common.FONT_PATHS["ttf"]["monospaced"])
+    print("Updated monospaced TTF")
+    
+    # Convert monospaced .ttf to .woff
+    common.convert_ttf(common.FONT_PATHS["ttf"]["monospaced"], common.FontFormats.WOFF)
+    print("Updated monospaced WOFF")
+    
+    # Convert monospaced .ttf to .woff2
+    common.convert_ttf(common.FONT_PATHS["ttf"]["monospaced"], common.FontFormats.WOFF2)
+    print("Updated monospaced WOFF2\n")
+    
     # Make 1D PNG from monospaced TTF
     font_monospaced = ImageFont.truetype(common.FONT_PATHS["ttf"]["monospaced"], common.FONT_SIZE)
     font_image_1d_png = common.create_1d_font_from_ttf(font_monospaced, common.FONT_CHAR_SIZE, char_line_spacing=common.FONT_CHAR_LINE_SPACING)
@@ -188,26 +212,8 @@ def main(args):
     with open(readme_path, "w", newline='\n') as f:
         f.write(readme)
     
-    print("Updated readme\n")
-    
-    # Convert proportional .ttf to .woff
-    proportional_ttf_path = Path(common.PATH, "Microfont.ttf")
-    common.convert_ttf(proportional_ttf_path, common.FontFormats.WOFF)
-    print("Updated proportional WOFF")
-    
-    # Convert proportional .ttf to .woff2
-    common.convert_ttf(proportional_ttf_path, common.FontFormats.WOFF2)
-    print("Updated proportional WOFF2")
-    
-    # Convert monospaced .ttf to .woff
-    proportional_ttf_path = Path(common.PATH, "Microfont-Mono.ttf")
-    common.convert_ttf(proportional_ttf_path, common.FontFormats.WOFF)
-    print("Updated monospaced WOFF")
-    
-    # Convert monospaced .ttf to .woff2
-    common.convert_ttf(proportional_ttf_path, common.FontFormats.WOFF2)
-    print("Updated monospaced WOFF2")
-    
+    print("Updated readme")
+
 
 if __name__ == "__main__":
     main(sys.argv[1:])
