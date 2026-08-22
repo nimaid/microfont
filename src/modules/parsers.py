@@ -1,4 +1,3 @@
-import codecs
 import argparse
 
 from pathlib import Path
@@ -56,7 +55,7 @@ def parse_args_generate(args, default_font_path):
     parsed_args = parser.parse_args(args)
     
     # Interpret string arguments
-    parsed_args.text = codecs.decode(parsed_args.text, "unicode_escape")
+    parsed_args.text = parsed_args.text.replace("\\n", "\n")
     
     parsed_args.output = Path(parsed_args.output)
     
@@ -91,7 +90,7 @@ def parse_args_generate(args, default_font_path):
 # Parse arguments for proportional image generator
 def parse_args_proportional(args, default_font_path, default_font_size, default_font_char_width, default_font_char_height, default_font_char_line_spacing):
     parser = argparse.ArgumentParser(
-        description=f"Renders text into an image using the proportional TTF font.\n\n"
+        description=f"Renders text into an image using a TTF font.\n\n"
                     f"Valid parameters are shown in {{braces}}.\n"
                     f"Default parameters are shown in [brackets].",
         formatter_class=argparse.RawDescriptionHelpFormatter
@@ -176,7 +175,7 @@ def parse_args_proportional(args, default_font_path, default_font_size, default_
         parser.error("scale value cannot be less than 1")
     
     # Interpret string arguments
-    parsed_args.text = codecs.decode(parsed_args.text, "unicode_escape")
+    parsed_args.text = parsed_args.text.replace("\\n", "\n")
     
     parsed_args.output = Path(parsed_args.output)
     

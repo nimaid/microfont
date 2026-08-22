@@ -127,6 +127,36 @@ def main(args):
     ).save(Path(common.PATH, "docs", "pangram.png"))
     print("Updated pangram image")
     
+    # Render Spanish image
+    common.render_ttf_font(
+        text="El veloz murciélago\nhindú comía feliz\ncardillo y kiwi.\nLa cigüeña tocaba\nel saxofón detrás\ndel palenque de paja.",
+        font=font_proportional,
+        char_size=common.FONT_CHAR_SIZE,
+        char_line_spacing=common.FONT_CHAR_LINE_SPACING,
+        color=default_text_color,
+        background=default_background_color,
+        padding=defaults.DEFAULT_PADDING,
+        align=common.TextAlign.CENTERED,
+        scale=defaults.DEFAULT_SCALE,
+        spacing=defaults.DEFAULT_SPACING
+    ).save(Path(common.PATH, "docs", "spanish.png"))
+    print("Updated Spanish image")
+    
+    # Render Greek image
+    common.render_ttf_font(
+        text="Ταχίστη αλώπηξ βαφής\nψημένη γη, δρασκελίζει\nυπέρ νωθρού κυνός\nTakhístè alôpèx vaphês\npsèménè gè, draskelízei\nypér nòthroý kynós",
+        font=font_proportional,
+        char_size=common.FONT_CHAR_SIZE,
+        char_line_spacing=common.FONT_CHAR_LINE_SPACING,
+        color=default_text_color,
+        background=default_background_color,
+        padding=defaults.DEFAULT_PADDING,
+        align=common.TextAlign.CENTERED,
+        scale=defaults.DEFAULT_SCALE,
+        spacing=defaults.DEFAULT_SPACING
+    ).save(Path(common.PATH, "docs", "greek.png"))
+    print("Updated Greek image")
+    
     # Render poem image
     poem_image = common.render_ttf_font(
         text="I met a traveller from an antique land\nWho said: Two vast and trunkless legs of stone\nStand in the desert. Near them, on the sand,\nHalf sunk, a shattered visage lies, whose frown,\nAnd wrinkled lip, and sneer of cold command,\nTell that its sculptor well those passions read\nWhich yet survive, stamped on these lifeless things,\nThe hand that mocked them and the heart that fed:\nAnd on the pedestal these words appear:\n\"My name is Ozymandias, king of kings:\nLook on my works, ye Mighty, and despair!\"\nNothing beside remains. Round the decay\nOf that colossal wreck, boundless and bare\nThe lone and level sands stretch far away.",

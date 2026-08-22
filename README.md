@@ -3,6 +3,10 @@
 
 <p align="center"><img src="docs/demo.png" width="400px" alt="A demo of every ASCII character."/></p>
 
+<p align="center"><p align="center"><img src="docs/spanish.png" width="400px" alt="A Spanish pangram."/></p>
+
+<p align="center"><p align="center"><img src="docs/greek.png" width="400px" alt="A Greek pangram."/></p>
+
 <p align="center"><a href="https://nimaid.itch.io/microfont">Itch.io Page</a></p>
 
 ## Examples
