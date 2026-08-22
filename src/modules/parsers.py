@@ -271,6 +271,42 @@ def parse_args_convert_ttf(args, get_output_format, description):
     return parsed_args
 
 
+# Parse arguments for TTF converters that replace fields with string inputs
+def parse_args_replace_ttf_field(args, description):
+    parser = argparse.ArgumentParser(
+        description=f"{description}\n\n"
+                    f"Valid parameters are shown in {{braces}}.\n"
+                    f"Default parameters are shown in [brackets].",
+        formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    parser.add_argument("-f", "--font", dest="font", type=str, required=True,
+                        help=f"the path to the TTF to convert"
+                       )
+    
+    parser.add_argument("-o", "--output", dest="output", type=str, required=True,
+                        help=f"the path and filename of the desired output font file"
+                       )
+    
+    parser.add_argument("-t", "--text", dest="text", type=str, required=True,
+                        help=f"the text to use for the replacement"
+                       )
+
+    parsed_args = parser.parse_args(args)
+    
+    # Interpret string arguments
+    font = Path(parsed_args.font)
+    if not font.is_file():
+        parser.error(f"the file \"{font}\" does not exist")
+    parsed_args.font = font
+    
+    output = Path(parsed_args.output)
+    if font.resolve(strict=False) == output.resolve(strict=False):
+        parser.error("the output font file must be different than the input one")
+    parsed_args.output = output
+    
+    return parsed_args
+
+
 # Parse arguments for encoders
 def parse_args_encode(args, default_font_path, description):
     parser = argparse.ArgumentParser(

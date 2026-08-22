@@ -15,14 +15,14 @@ fixed_height_baseline_offset: 0
 creator_name: Ella Jameson (nimaid)
 font_family_name: Microfont
 font_sub_family_name: Regular
-version: Version 2.2
+version: Version 3.0
 font_url: https://nimaid.itch.io/microfont
 license: Creative Commons Zero (CC0)
 license_url: https://creativecommons.org/publicdomain/zero/1.0/
 
 last_exported_path: 
 
-num_glyphs: 94
+num_glyphs: 565
 glyphs:
 	33:
 		advance: 2
@@ -588,3 +588,2829 @@ glyphs:
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
 		pixels: 0 1, 1 1, 1 2, 2 2, 
+	161:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 4, 
+	162:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 2 3, 0 3, 0 2, 0 1, 1 1, 2 1, 1 0, 
+	163:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 1 1, 1 2, 1 3, 2 4, 0 2, 2 2, 
+	166:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 0 1, 0 0, 
+	165:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 2 3, 2 4, 0 3, 0 4, 2 1, 0 1, 
+	168:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 2 4, 
+	167:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 1 1, 2 1, 2 2, 0 2, 0 3, 1 3, 1 4, 2 4, 
+	170:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 1 2, 1 4, 2 4, 2 3, 2 2, 
+	164:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 1, 0 2, 0 3, 1 3, 2 3, 2 2, 2 1, 1 1, 
+	172:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 2 1, 
+	175:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 2 4, 
+	176:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 2, 2 3, 1 4, 0 3, 
+	177:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 3, 1 1, 0 0, 1 0, 2 0, 
+	178:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 1, 1 1, 0 1, 2 3, 1 4, 0 4, 0 2, 
+	180:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 0 3, 
+	228:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 0, 2 1, 2 2, 1 2, 0 4, 0 1, 2 4, 
+	227:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 0, 2 1, 2 2, 1 2, 0 4, 0 1, 2 4, 1 4, 
+	225:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 0, 2 1, 2 2, 1 2, 0 1, 2 4, 
+	224:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 0, 2 1, 2 2, 1 2, 0 4, 0 1, 
+	229:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 0, 2 1, 2 2, 1 2, 0 1, 1 4, 
+	226:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 0, 2 1, 1 2, 2 2, 0 1, 1 4, 
+	186:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 2 3, 0 3, 1 4, 2 2, 1 1, 
+	185:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 1, 1 1, 2 1, 1 2, 1 3, 1 4, 0 3, 
+	183:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 
+	182:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 2 1, 2 2, 2 3, 2 4, 1 4, 1 2, 0 3, 1 3, 
+	181:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 1 1, 0 2, 2 1, 2 2, 2 3, 0 3, 
+	179:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 0 1, 1 1, 1 3, 2 2, 2 4, 
+	8224:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 0 3, 2 3, 
+	8225:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 0 3, 2 3, 0 1, 2 1, 
+	8226:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 2, 0 2, 1 3, 2 2, 1 1, 0 3, 2 3, 2 1, 0 1, 
+	8230:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 2 0, 
+	191:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 0, 0 0, 0 1, 0 2, 1 2, 1 4, 
+	192:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 1 2, 2 0, 2 1, 0 4, 0 1, 0 0, 
+	193:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 1 2, 2 0, 2 1, 2 4, 0 1, 0 0, 
+	194:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 1 2, 2 0, 2 1, 1 4, 0 1, 0 0, 
+	195:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 1 2, 2 0, 2 1, 2 4, 0 4, 1 4, 0 1, 0 0, 
+	196:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 1 2, 2 0, 2 1, 0 4, 2 4, 0 1, 0 0, 
+	197:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 1 2, 2 0, 2 1, 1 4, 0 1, 0 0, 
+	200:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 0, 0 0, 0 1, 0 2, 1 2, 2 2, 1 1, 0 4, 
+	201:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 0, 0 0, 0 1, 0 2, 1 2, 2 2, 1 1, 2 4, 
+	202:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 0, 0 0, 0 1, 0 2, 1 2, 2 2, 1 1, 1 4, 
+	203:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 0, 0 0, 0 1, 0 2, 1 2, 2 2, 1 1, 0 4, 2 4, 
+	188:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 2, 2 0, 1 1, 0 4, 2 1, 0 1, 0 2, 
+	189:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 2, 0 2, 1 1, 1 0, 2 0, 
+	190:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 2 1, 2 2, 1 1, 0 1, 0 2, 0 4, 1 4, 2 4, 
+	173:
+		advance: 1
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 
+	8216:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 
+	8217:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 
+	8220:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 2 4, 2 3, 
+	8221:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 2 4, 2 3, 
+	8212:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 
+	247:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 4, 1 0, 
+	8308:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 1 3, 2 3, 2 4, 2 2, 2 1, 
+	199:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 4, 1 4, 0 3, 0 2, 1 1, 2 1, 1 0, 
+	204:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 1 1, 1 2, 0 2, 0 4, 2 2, 
+	205:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 1 1, 1 2, 0 2, 2 4, 2 2, 
+	206:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 1 1, 1 2, 0 2, 1 4, 2 2, 
+	207:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 1 1, 1 2, 0 2, 0 4, 2 2, 2 4, 
+	209:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 1 4, 1 1, 0 4, 2 1, 2 2, 2 4, 
+	210:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 2, 2 2, 2 1, 0 2, 1 0, 0 0, 0 1, 0 4, 
+	211:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 2, 2 2, 2 1, 0 2, 1 0, 0 0, 0 1, 2 4, 
+	212:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 2, 2 2, 2 1, 0 2, 1 0, 0 0, 0 1, 1 4, 
+	213:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 2, 2 2, 2 1, 0 2, 1 0, 0 0, 0 1, 0 4, 1 4, 2 4, 
+	214:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 2, 0 2, 2 1, 2 2, 1 0, 0 0, 0 1, 0 4, 2 4, 
+	242:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 2, 2 1, 0 0, 1 0, 2 2, 0 1, 0 4, 
+	243:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 2, 2 1, 0 0, 1 0, 2 2, 0 1, 2 4, 
+	244:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 0 1, 1 2, 2 1, 1 4, 0 0, 2 2, 
+	245:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 2, 2 2, 2 1, 1 4, 1 0, 2 4, 0 1, 0 4, 
+	246:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 2, 1 2, 2 1, 0 0, 1 0, 2 4, 0 1, 0 4, 
+	248:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 3, 1 0, 0 2, 1 2, 1 1, 2 2, 0 0, 2 3, 2 1, 0 1, 
+	249:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 0, 0 1, 0 2, 2 1, 2 2, 0 4, 
+	250:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 0, 0 1, 0 2, 2 1, 2 2, 2 4, 
+	251:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 0, 0 1, 0 2, 2 1, 2 2, 1 4, 
+	252:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 0, 0 1, 0 2, 2 1, 2 2, 0 4, 2 4, 
+	253:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 0 0, 2 4, 0 2, 2 2, 
+	255:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 0, 2 4, 0 2, 1 1, 2 2, 
+	231:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 3, 2 3, 0 2, 1 1, 2 1, 1 0, 
+	215:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 1 2, 2 1, 2 3, 0 1, 
+	217:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 2, 0 1, 0 0, 1 0, 2 0, 2 1, 2 2, 
+	218:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 4, 0 2, 0 1, 0 0, 1 0, 2 0, 2 1, 2 2, 
+	219:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 0 2, 0 1, 0 0, 1 0, 2 0, 2 1, 2 2, 
+	220:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 2, 0 1, 0 0, 1 0, 2 0, 2 1, 2 2, 2 4, 
+	221:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 1 0, 2 4, 0 2, 2 1, 2 2, 0 1, 
+	222:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 0 2, 0 1, 0 0, 1 1, 2 2, 1 4, 2 3, 
+	232:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 0 4, 1 2, 2 0, 0 1, 0 2, 1 0, 0 0, 
+	233:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 2 4, 1 2, 2 0, 0 1, 0 2, 1 0, 0 0, 
+	234:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 1 4, 1 2, 2 0, 0 1, 0 2, 1 0, 0 0, 
+	235:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 0 4, 1 2, 2 0, 0 1, 0 2, 1 0, 0 0, 2 4, 
+	236:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 4, 
+	237:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 0 2, 0 1, 0 0, 
+	238:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 0 3, 1 4, 2 3, 
+	239:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 4, 2 4, 
+	241:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 2 0, 2 1, 1 2, 0 2, 0 1, 0 0, 1 4, 2 4, 
+	254:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 2 2, 1 1, 1 3, 
+	240:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 2, 1 3, 0 4, 2 4, 1 2, 2 1, 2 0, 1 0, 0 0, 0 1, 0 3, 
+	208:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 0 2, 0 1, 0 0, 1 0, 2 2, 2 1, 2 3, 1 4, 1 2, 
+	223:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 0 2, 0 1, 0 0, 2 1, 1 2, 2 3, 1 4, 1 0, 2 0, 
+	171:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 1 3, 0 2, 
+	187:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 2, 0 1, 0 3, 
+	216:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 2 2, 0 1, 2 3, 1 2, 2 1, 1 3, 1 0, 1 4, 0 0, 1 1, 2 4, 0 3, 
+	169:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 0 4, 1 3, 
+	174:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 1 4, 0 4, 1 3, 
+	198:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 4, 2 2, 2 0, 0 2, 0 3, 0 1, 0 0, 
+	230:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 3, 0 2, 2 0, 0 1, 2 3, 1 2, 1 0, 1 1, 2 2, 0 0, 
+	8211:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 
+	8722:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 
+	8725:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 1, 1 2, 2 3, 
+	8260:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 1, 1 2, 2 3, 
+	8249:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 3, 1 1, 
+	8250:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 1 2, 0 1, 
+	730:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 
+	732:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 1 3, 2 3, 
+	305:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 0 1, 0 0, 
+	710:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 
+	338:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 4, 2 0, 2 2, 0 3, 0 2, 0 1, 
+	339:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 3, 0 2, 2 0, 0 1, 2 3, 1 2, 1 0, 1 1, 2 2, 
+	8218:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 
+	8222:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 2 0, 2 1, 
+	8364:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 1, 0 2, 1 3, 2 2, 2 4, 1 2, 
+	184:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 
+	7838:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 0 2, 0 1, 0 0, 2 1, 1 2, 2 3, 1 4, 1 0, 2 0, 0 4, 
+	376:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 0 2, 2 2, 0 4, 2 4, 0 1, 2 1, 
+	8219:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 
+	8482:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 1 3, 
+	913:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 1 4, 1 2, 2 0, 2 1, 2 2, 2 3, 
+	914:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 0 2, 0 1, 0 0, 1 0, 2 1, 1 2, 2 3, 1 4, 
+	915:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 1 4, 2 4, 
+	916:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 2 1, 0 1, 2 2, 0 2, 1 3, 1 4, 
+	917:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 0, 0 0, 0 1, 0 2, 0 3, 0 4, 1 4, 2 4, 1 2, 
+	918:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 2 4, 2 3, 1 2, 2 0, 1 0, 0 0, 0 1, 
+	919:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 1 2, 2 4, 2 3, 2 2, 2 1, 2 0, 
+	920:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 0 3, 2 3, 0 2, 0 1, 1 0, 2 2, 2 1, 1 2, 
+	921:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 1 2, 1 1, 1 0, 0 4, 2 4, 2 0, 0 0, 
+	922:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 0 2, 0 1, 0 0, 1 2, 2 3, 2 4, 2 1, 2 0, 
+	923:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 1 4, 2 3, 2 2, 2 1, 2 0, 
+	924:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 1 3, 1 2, 2 4, 2 3, 2 2, 2 1, 2 0, 
+	925:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 1 1, 1 2, 1 3, 2 4, 2 3, 2 2, 2 1, 2 0, 
+	926:
+		advance: 5
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 2 4, 1 2, 0 0, 1 0, 2 0, 3 0, 
+	927:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 1, 0 2, 0 3, 1 4, 2 3, 2 2, 2 1, 1 0, 
+	894:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 1, 1 3, 
+	928:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 1 4, 2 4, 2 3, 2 2, 2 1, 2 0, 
+	929:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 1 4, 2 3, 1 2, 
+	931:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 0, 0 0, 0 1, 2 4, 1 4, 0 4, 1 2, 0 3, 
+	932:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 0 4, 2 4, 
+	933:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 3, 0 4, 2 3, 2 4, 
+	934:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 0 3, 0 2, 0 1, 2 3, 2 2, 2 1, 
+	935:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 1 2, 2 3, 2 4, 2 0, 2 1, 0 3, 0 4, 
+	936:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 2, 2 3, 2 4, 0 2, 0 3, 0 4, 
+	937:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 1 1, 0 2, 2 2, 0 3, 2 3, 1 4, 
+	938:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 0 2, 1 2, 0 4, 2 0, 2 2, 0 0, 2 4, 
+	939:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 2 2, 0 2, 0 4, 2 4, 0 1, 2 1, 
+	940:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 2 1, 2 2, 1 2, 0 1, 1 0, 1 4, 
+	1022:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 0, 0 1, 0 2, 0 3, 1 4, 2 4, 2 2, 
+	1023:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 1, 2 2, 2 3, 1 4, 0 4, 0 2, 
+	1021:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 1, 2 2, 2 3, 1 4, 0 4, 
+	1020:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 1 0, 0 3, 1 2, 1 4, 2 3, 
+	402:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 3, 2 4, 1 2, 0 2, 2 2, 1 1, 0 0, 
+	729:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 
+	731:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 
+	733:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 0 4, 2 3, 2 4, 
+	711:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 
+	728:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 
+	322:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 1, 1 2, 1 3, 1 4, 0 2, 2 3, 
+	321:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 1 2, 1 3, 1 4, 0 2, 1 0, 2 0, 2 3, 
+	410:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 1, 1 2, 1 3, 1 4, 0 2, 2 2, 
+	955:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 1 2, 2 0, 2 1, 0 4, 0 3, 
+	952:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 1, 2 2, 0 1, 0 2, 1 3, 1 2, 
+	947:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 1 2, 2 3, 2 4, 0 3, 0 4, 
+	948:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 0 1, 1 2, 2 1, 0 3, 1 4, 2 4, 
+	941:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 0, 0 1, 1 1, 1 2, 2 2, 1 4, 
+	942:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 1, 0 2, 1 2, 2 1, 2 0, 1 4, 
+	953:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 0 1, 0 2, 0 3, 
+	943:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 0, 0 1, 0 2, 
+	944:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 0 1, 1 0, 2 0, 2 1, 2 2, 1 4, 0 4, 2 4, 
+	945:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 2 1, 2 2, 2 3, 1 0, 0 1, 0 2, 1 3, 
+	946:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 2 3, 0 3, 0 2, 0 1, 0 0, 1 1, 1 3, 2 2, 
+	949:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 0, 0 1, 1 2, 1 1, 2 2, 
+	960:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 1 3, 2 3, 2 2, 2 1, 2 0, 
+	981:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 2 1, 0 2, 2 2, 0 1, 
+	980:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 2 2, 0 2, 0 4, 2 4, 0 1, 2 1, 
+	892:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 0 3, 0 2, 0 1, 1 0, 2 2, 
+	893:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 2 3, 2 2, 2 1, 1 0, 0 2, 
+	951:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 0 3, 0 1, 1 3, 2 2, 2 1, 2 0, 
+	954:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 1 2, 2 3, 2 1, 2 0, 
+	956:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 0 2, 0 1, 1 1, 2 1, 2 2, 2 3, 0 0, 
+	912:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 1, 1 2, 1 4, 0 4, 2 4, 
+	950:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 2 4, 0 1, 1 3, 0 2, 1 0, 2 0, 
+	957:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 1, 0 2, 0 3, 1 0, 0 1, 2 2, 2 3, 
+	958:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 2 4, 1 3, 0 2, 0 1, 1 0, 2 0, 1 2, 2 2, 
+	959:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 0 1, 0 2, 1 3, 2 2, 2 1, 
+	961:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 1 3, 2 2, 1 1, 
+	891:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 1, 1 3, 2 2, 0 3, 0 0, 
+	884:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 0 4, 
+	885:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 1, 0 0, 
+	890:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 
+	900:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 
+	901:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 2 4, 
+	903:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 
+	902:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 1, 1 1, 1 2, 0 4, 2 1, 2 0, 0 0, 
+	904:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 2, 1 2, 1 1, 0 2, 0 1, 0 0, 1 0, 2 0, 0 4, 
+	905:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 4, 2 2, 2 0, 2 1, 1 1, 
+	908:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 0 1, 1 2, 0 4, 2 1, 2 0, 2 2, 0 2, 0 0, 
+	910:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 0 2, 0 4, 2 2, 0 1, 2 1, 
+	906:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 1 1, 1 2, 0 4, 0 2, 2 2, 
+	911:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 1 1, 0 2, 2 2, 1 3, 0 4, 
+	8304:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 2 4, 2 3, 2 2, 2 1, 1 1, 0 1, 0 2, 0 3, 
+	8309:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 4, 1 4, 0 4, 0 3, 2 2, 1 1, 0 1, 
+	8310:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 4, 1 4, 0 4, 0 3, 0 2, 0 1, 1 1, 2 1, 2 2, 1 2, 
+	8313:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 4, 1 4, 0 4, 0 3, 1 3, 2 3, 2 2, 2 1, 1 1, 0 1, 
+	8311:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 2 4, 2 3, 1 2, 1 1, 
+	8312:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 2 4, 2 3, 1 3, 0 3, 0 2, 0 1, 1 1, 2 1, 2 2, 
+	8317:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 0 3, 0 2, 1 1, 
+	8318:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 3, 1 2, 0 1, 
+	8480:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 0 3, 
+	8486:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 2 0, 1 1, 0 2, 0 3, 1 4, 2 3, 2 2, 1 0, 
+	8320:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 0 1, 0 0, 1 0, 2 0, 2 1, 2 2, 2 3, 1 3, 0 3, 
+	8321:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 3, 1 2, 1 1, 2 0, 1 0, 0 0, 
+	8322:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 1, 0 3, 1 3, 2 2, 0 0, 1 0, 2 0, 
+	8323:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 3, 2 1, 1 2, 1 0, 0 0, 1 3, 0 3, 
+	8324:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 2 1, 2 3, 2 2, 1 2, 0 2, 0 3, 
+	8325:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 1, 0 2, 0 3, 1 3, 2 3, 
+	8326:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 2 1, 2 0, 1 0, 0 0, 0 1, 0 2, 0 3, 1 3, 2 3, 
+	8327:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 2 2, 2 3, 1 3, 0 3, 
+	8328:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 1, 2 0, 1 0, 0 0, 0 1, 0 2, 1 2, 2 2, 2 3, 1 3, 0 3, 
+	8329:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 2 1, 2 2, 1 2, 0 2, 0 3, 1 3, 2 3, 
+	8333:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 0 1, 0 2, 1 3, 
+	8334:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 1, 1 2, 0 3, 
+	8319:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 0 3, 0 4, 1 4, 2 3, 2 2, 
+	8747:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 1, 1 2, 1 3, 2 4, 
+	8729:
+		advance: 2
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 
+	8471:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 0 4, 1 4, 
+	8356:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 1 1, 1 2, 1 3, 2 4, 2 2, 0 2, 
+	8213:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 
+	8208:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 
+	8210:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 
+	8199:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 
+	8710:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 2 1, 0 1, 0 2, 2 2, 1 3, 1 4, 
+	8719:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 1 4, 2 4, 2 3, 2 2, 2 1, 2 0, 
+	8721:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 0, 0 0, 0 1, 1 2, 0 3, 0 4, 1 4, 2 4, 
+	8706:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 0 1, 2 1, 1 2, 2 3, 0 2, 1 4, 0 4, 
+	8730:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 2 4, 1 3, 1 2, 1 1, 1 0, 0 1, 
+	8804:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 4, 1 2, 0 3, 2 4, 1 0, 0 0, 2 2, 
+	8805:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 2 3, 1 2, 0 0, 1 0, 2 0, 0 2, 
+	8800:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 1 3, 2 3, 0 1, 1 1, 2 1, 0 0, 1 2, 2 4, 
+	9674:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 0 2, 2 2, 1 3, 1 4, 
+	962:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 3, 1 1, 2 1, 2 0, 2 3, 
+	963:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 1, 0 1, 0 2, 2 2, 1 3, 2 3, 
+	964:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 2 0, 1 2, 0 3, 1 3, 2 3, 
+	965:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 0 2, 0 1, 0 0, 1 0, 2 1, 2 2, 2 3, 
+	966:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 3, 0 2, 2 2, 2 3, 1 2, 1 1, 1 0, 
+	968:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 1 3, 2 3, 2 2, 1 2, 0 2, 1 1, 1 0, 1 4, 
+	967:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 2, 2 3, 2 0, 0 3, 1 1, 
+	970:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 2, 1 1, 2 0, 0 4, 2 4, 
+	971:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 0 1, 0 0, 1 0, 2 1, 2 2, 0 4, 2 4, 
+	972:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 2, 2 2, 0 1, 0 0, 2 1, 1 0, 
+	973:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 0 1, 0 0, 1 0, 2 1, 2 2, 1 4, 
+	969:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 0 1, 0 0, 1 0, 2 2, 2 1, 2 0, 1 1, 0 3, 2 3, 
+	974:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 0 1, 1 0, 1 1, 0 0, 2 2, 2 1, 2 0, 1 4, 
+	982:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 1, 1 0, 0 1, 0 0, 2 0, 2 1, 2 2, 1 4, 2 4, 0 4, 
+	1012:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 1, 0 2, 0 3, 1 4, 2 3, 2 2, 2 1, 1 0, 1 2, 
+	1013:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 0, 0 1, 0 2, 0 3, 1 4, 2 4, 1 2, 2 2, 
+	1014:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 2 3, 2 2, 2 1, 1 0, 0 0, 1 2, 0 2, 
+	1015:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 1 4, 2 3, 2 2, 1 1, 
+	1016:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 1 3, 2 2, 1 1, 
+	1017:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 4, 1 4, 0 3, 0 2, 0 1, 1 0, 2 0, 
+	9472:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 
+	9473:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 
+	9474:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 1 2, 1 1, 1 0, 
+	9475:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 1 2, 1 1, 1 0, 
+	9476:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 2 2, 
+	9477:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 2 2, 
+	9478:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 2, 1 4, 
+	9479:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 2, 1 4, 
+	9480:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 2 2, 
+	9481:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 2 2, 
+	9482:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 2, 1 4, 
+	9483:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 2, 1 4, 
+	9484:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 2 2, 
+	9485:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 2 2, 
+	9486:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 2 2, 
+	9487:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 2 2, 
+	9488:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 1 1, 1 0, 
+	9489:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 1 1, 1 0, 
+	9490:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 1 1, 1 0, 
+	9491:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 1 1, 1 0, 
+	9492:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 1 2, 2 2, 
+	9493:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 2 2, 1 2, 
+	9494:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 1 2, 2 2, 
+	9495:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 1 2, 2 2, 
+	9496:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 1 2, 0 2, 
+	9497:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 1 3, 1 4, 
+	8467:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 2, 2 0, 2 3, 1 4, 0 3, 0 2, 0 1, 1 0, 
+	976:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 1, 0 0, 1 0, 2 1, 0 2, 1 2, 0 3, 0 4, 1 4, 
+	979:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 0 2, 0 4, 2 2, 0 1, 2 1, 
+	978:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 0 2, 2 2, 0 3, 2 3, 
+	977:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 1, 1 0, 2 1, 2 2, 0 4, 1 4, 2 3, 0 3, 1 3, 
+	984:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 0 3, 0 2, 1 1, 2 2, 2 3, 1 0, 0 1, 2 1, 2 4, 0 4, 
+	985:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 0 2, 1 3, 2 2, 0 1, 2 1, 2 3, 0 3, 
+	983:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 0 2, 0 1, 1 2, 1 3, 2 4, 2 3, 2 2, 2 1, 2 0, 
+	986:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 0 1, 0 2, 0 3, 1 4, 2 4, 
+	987:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 2 1, 1 1, 0 2, 2 3, 1 3, 
+	988:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 1 4, 2 4, 1 2, 2 2, 2 1, 
+	989:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 1 4, 1 2, 2 4, 2 1, 
+	990:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 1 3, 2 3, 2 2, 1 1, 2 0, 
+	991:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 2 1, 2 2, 1 2, 0 2, 0 3, 
+	993:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 2 1, 2 2, 1 3, 1 1, 0 4, 
+	992:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 2 1, 0 4, 2 3, 2 2, 1 4, 1 2, 
+	1006:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 0 3, 2 3, 
+	1007:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 0 2, 2 2, 
+	1008:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 1 2, 1 1, 2 3, 2 2, 2 1, 2 0, 
+	1010:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 3, 2 0, 0 2, 0 1, 1 0, 2 3, 
+	1002:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 1 2, 2 3, 2 4, 2 0, 2 1, 0 3, 0 4, 1 0, 
+	1003:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 1, 0 3, 1 2, 0 1, 0 0, 1 0, 2 0, 2 3, 
+	1001:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 0, 0 1, 1 1, 2 2, 2 3, 1 4, 0 3, 
+	1019:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 1, 2 2, 2 3, 0 1, 0 0, 0 2, 0 3, 1 2, 
+	1018:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 1 3, 1 2, 2 4, 2 3, 2 2, 2 1, 2 0, 
+	1011:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 1, 1 2, 1 4, 
+	1009:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 0, 0 1, 0 2, 0 3, 1 4, 2 3, 2 2, 1 2, 
+	1004:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 2 1, 2 2, 1 2, 0 2, 0 1, 0 3, 1 4, 2 4, 
+	1005:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 0 1, 2 1, 2 3, 1 2, 
+	994:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 0 2, 0 1, 2 4, 2 3, 2 2, 2 1, 1 2, 2 0, 1 1, 
+	995:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 2 1, 2 2, 1 2, 0 2, 0 1, 0 3, 2 3, 1 1, 
+	996:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 2 1, 2 2, 2 3, 2 4, 1 1, 0 2, 0 3, 0 4, 
+	997:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 2 1, 2 2, 2 3, 1 1, 0 2, 0 3, 
+	998:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 0 2, 2 4, 1 4, 2 3, 2 2, 2 1, 1 0, 
+	999:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 0 2, 1 3, 2 3, 2 2, 2 1, 1 0, 
+	1000:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 0, 0 1, 1 1, 2 2, 2 3, 1 4, 0 3, 0 4, 2 4, 
+	8240:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 1 2, 2 3, 2 4, 0 4, 2 0, 1 0, 
+	9498:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 1 3, 1 4, 
+	9499:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 1 3, 1 4, 
+	9500:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 2, 
+	9501:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 2, 
+	9502:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 2 2, 1 3, 1 4, 
+	9503:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 2, 
+	9504:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 2, 
+	9505:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 2, 
+	9506:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 2, 
+	9507:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 2, 
+	9508:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 0 2, 
+	9509:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 0 2, 
+	9510:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 0 2, 
+	9511:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 0 2, 
+	9512:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 0 2, 
+	9513:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 0 2, 
+	9514:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 0 2, 
+	9515:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 0 2, 
+	9516:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 1, 1 0, 
+	9517:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 1, 1 0, 
+	9518:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 1, 1 0, 
+	9519:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 1, 1 0, 
+	9520:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 1, 1 0, 
+	9521:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 1, 1 0, 
+	9522:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 1, 1 0, 
+	9523:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 1, 1 0, 
+	9524:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 3, 1 4, 
+	9525:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 3, 1 4, 
+	9526:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 3, 1 4, 
+	9527:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 3, 1 4, 
+	9528:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 3, 1 4, 
+	9529:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 3, 1 4, 
+	9530:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 3, 1 4, 
+	9531:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 3, 1 4, 
+	9532:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 2, 2 2, 1 4, 1 3, 
+	9533:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 2, 2 2, 1 4, 1 3, 
+	9534:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 2, 2 2, 1 4, 1 3, 
+	9535:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 2, 2 2, 1 4, 1 3, 
+	9536:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 2, 2 2, 1 4, 1 3, 
+	9537:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 2, 2 2, 1 4, 1 3, 
+	9538:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 2, 2 2, 1 4, 1 3, 
+	9539:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 2, 2 2, 1 4, 1 3, 
+	9540:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 2, 2 2, 1 4, 1 3, 
+	9541:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 2, 2 2, 1 4, 1 3, 
+	9542:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 2, 2 2, 1 4, 1 3, 
+	9543:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 2, 2 2, 1 4, 1 3, 
+	9544:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 2, 2 2, 1 4, 1 3, 
+	9545:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 2, 2 2, 1 4, 1 3, 
+	9546:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 2, 2 2, 1 4, 1 3, 
+	9547:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 0 2, 2 2, 1 4, 1 3, 
+	9548:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 2 2, 
+	9549:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 2 2, 
+	9550:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 2, 1 4, 
+	9551:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 2, 1 4, 
+	9552:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 3, 0 3, 2 3, 
+	9553:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 0, 2 1, 2 2, 2 3, 2 4, 
+	9554:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 3, 2 3, 1 0, 1 1, 2 2, 1 2, 
+	9555:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 2, 1 2, 2 0, 2 1, 1 1, 
+	9556:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 3, 2 3, 2 2, 2 1, 2 0, 1 0, 1 1, 1 2, 
+	9557:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 1 3, 1 2, 1 1, 1 0, 0 2, 
+	9559:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 0, 1 1, 2 1, 1 3, 0 3, 2 2, 1 2, 0 2, 2 3, 
+	9558:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 2 2, 2 1, 2 0, 0 2, 
+	9560:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 1 2, 2 2, 2 3, 
+	9561:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 1 2, 2 2, 
+	9562:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 1 2, 2 2, 2 3, 2 4, 
+	9563:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 1 2, 0 2, 0 3, 
+	9564:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 2 4, 2 3, 1 3, 0 2, 1 2, 2 2, 
+	9565:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 2 4, 2 3, 1 3, 0 3, 0 2, 1 2, 2 2, 
+	9581:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 2 2, 
+	9582:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 1, 1 0, 0 2, 
+	9583:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 0 2, 
+	9584:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 2 2, 
+	9585:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 1, 1 2, 0 0, 2 3, 2 4, 
+	9586:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 1 2, 2 1, 2 0, 
+	9587:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 1 2, 2 3, 2 4, 2 1, 2 0, 0 3, 0 4, 
+	9566:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 1 2, 1 1, 1 0, 2 3, 2 2, 
+	9567:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 4, 2 3, 2 2, 2 1, 2 0, 
+	9568:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 1 2, 1 1, 1 0, 2 0, 2 1, 2 2, 2 3, 2 4, 
+	9569:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 1 2, 1 1, 1 0, 0 2, 0 3, 
+	9570:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 2 4, 2 3, 2 2, 2 1, 2 0, 1 0, 1 1, 1 2, 1 3, 0 2, 
+	9571:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 4, 2 3, 2 2, 2 1, 2 0, 0 2, 0 3, 
+	9572:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 2 3, 2 2, 0 2, 0 3, 
+	9573:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 2 2, 2 1, 2 0, 0 2, 
+	9574:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 1 3, 2 3, 2 2, 1 2, 0 2, 1 1, 1 0, 2 0, 2 1, 
+	9575:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 2 3, 1 3, 0 3, 1 4, 
+	9576:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 2 2, 1 3, 1 4, 2 4, 2 3, 
+	9577:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 1 3, 2 3, 2 2, 1 2, 0 2, 1 4, 2 4, 
+	9578:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 1 3, 2 3, 2 2, 1 2, 0 2, 1 0, 1 1, 1 4, 
+	9579:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 4, 2 3, 2 2, 2 1, 2 0, 0 2, 
+	9580:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 4, 2 3, 2 2, 2 1, 2 0, 0 3, 0 2, 
+	9588:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 
+	9589:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 3, 1 4, 1 2, 
+	9590:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 2, 2 2, 
+	9591:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 
+	9592:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 1 3, 0 2, 1 2, 
+	9593:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 1 3, 1 2, 2 2, 2 3, 2 4, 
+	9594:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 3, 1 2, 2 3, 2 2, 
+	9595:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 2 2, 2 1, 2 0, 
+	9618:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 2 0, 1 1, 0 2, 2 2, 1 3, 0 4, 2 4, 
+	9617:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 2 0, 0 0, 2 2, 0 4, 2 4, 
+	9619:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 4, 1 4, 0 3, 1 0, 0 0, 1 3, 1 1, 0 2, 2 3, 0 4, 2 2, 2 0, 0 1, 2 1, 
+	9596:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 1 3, 2 3, 2 2, 
+	9597:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 2 1, 2 2, 1 2, 1 1, 1 0, 1 3, 1 4, 
+	9598:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 0 2, 1 2, 1 3, 2 2, 
+	9599:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 4, 1 4, 1 3, 1 2, 2 2, 2 3, 1 1, 1 0, 
+	9600:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 2 4, 2 3, 1 2, 0 2, 2 2, 0 3, 1 3, 
+	9601:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 
+	9604:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 2 1, 2 2, 1 2, 0 2, 0 1, 1 1, 
+	9603:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 0, 0 0, 0 1, 1 1, 2 1, 
+	9602:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 2 1, 1 1, 0 1, 
+	9605:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 2 1, 2 2, 1 2, 0 2, 0 1, 1 1, 
+	9606:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 2 1, 2 2, 2 3, 1 3, 0 3, 0 2, 0 1, 1 1, 1 2, 
+	9607:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 1 0, 2 0, 2 1, 2 2, 2 3, 1 3, 0 3, 0 2, 0 1, 1 1, 1 2, 
+	9608:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 1 3, 1 4, 2 4, 2 3, 2 2, 2 1, 2 0, 1 0, 1 1, 1 2, 0 4, 
+	9609:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 1 4, 2 4, 2 3, 2 2, 2 1, 2 0, 1 0, 1 1, 1 2, 1 3, 
+	9612:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 1 3, 1 2, 1 1, 1 0, 0 0, 0 1, 0 2, 0 3, 
+	9610:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 4, 2 3, 2 2, 2 1, 2 0, 1 0, 0 0, 0 1, 0 2, 0 3, 1 3, 1 4, 1 2, 1 1, 0 4, 
+	9611:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 1 3, 1 2, 1 1, 1 0, 0 0, 0 1, 0 2, 0 3, 
+	9613:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 0 4, 0 3, 0 2, 0 1, 0 0, 
+	9614:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 
+	9615:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 
+	9616:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 4, 2 3, 2 2, 2 1, 2 0, 
+	9620:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 2 4, 
+	9621:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 2 1, 2 2, 2 3, 2 4, 
+	9622:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 0 2, 
+	9623:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 2 0, 2 1, 1 1, 1 2, 2 2, 
+	9624:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 0 3, 
+	9629:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 4, 1 4, 1 3, 2 3, 
+	9625:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 0, 0 0, 2 2, 2 1, 0 1, 1 1, 1 2, 0 2, 0 3, 0 4, 
+	9626:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 2 2, 2 1, 2 0, 0 3, 0 4, 
+	9627:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 4, 1 4, 0 4, 0 3, 1 3, 2 3, 0 2, 0 1, 0 0, 
+	9628:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 0, 1 1, 1 2, 1 3, 1 4, 2 4, 2 3, 2 2, 2 1, 2 0, 0 3, 0 4, 
+	9630:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 0, 0 1, 1 3, 1 4, 2 4, 2 3, 0 2, 
+	9631:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 2, 1 3, 1 4, 2 4, 2 3, 2 2, 2 1, 2 0, 1 0, 0 0, 0 1, 1 1, 
+	9696:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 1 4, 2 3, 
+	9697:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 1, 2 2, 
+	9702:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 3, 2 2, 1 1, 
+	9695:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 2, 1 1, 
+	9694:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 2, 1 1, 
+	9693:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 1 4, 2 3, 
+	9692:
+		advance: 3
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 3, 1 4, 
+	8494:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 2 0, 1 0, 1 1, 0 1, 0 2, 2 2, 1 3, 
+	713:
+		advance: 4
+		auto_update_advance: true
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 4, 1 4, 2 4, 

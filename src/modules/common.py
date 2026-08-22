@@ -24,6 +24,8 @@ FONT_CHAR_HEIGHT = 5
 FONT_CHAR_SIZE = (FONT_CHAR_WIDTH, FONT_CHAR_HEIGHT)
 FONT_SIZE = FONT_CHAR_HEIGHT + FONT_CHAR_LINE_SPACING
 
+MANUFACTURER = "https://nimaid.itch.io/"
+
 PATH = Path(__file__).parent.parent.parent.resolve()
 
 FONT_PATHS = {
@@ -43,9 +45,17 @@ FONT_PATHS = {
         "proportional": Path(PATH, "temp", "microfont.ttf"),
         "monospaced": Path(PATH, "temp", "microfont_mono.ttf"),
     },
+    "optimized_raw_ttf": {
+        "proportional": Path(PATH, "temp", "O_microfont.ttf"),
+        "monospaced": Path(PATH, "temp", "O_microfont_mono.ttf"),
+    },
     "scaled_raw_ttf": {
-        "proportional": Path(PATH, "temp", "Microfont.ttf"),
-        "monospaced": Path(PATH, "temp", "Microfont-Mono.ttf"),
+        "proportional": Path(PATH, "temp", "S_microfont.ttf"),
+        "monospaced": Path(PATH, "temp", "S_microfont_mono-Mono.ttf"),
+    },
+    "manufacturer_raw_ttf": {
+        "proportional": Path(PATH, "temp", "M_microfont.ttf"),
+        "monospaced": Path(PATH, "temp", "M_microfont_mono-Mono.ttf"),
     },
 }
 
@@ -479,3 +489,85 @@ def update_pixelforge_ttf_copyright_year(font_in_path, font_out_path, year=None)
             record.string = copyright
     
     font.save(font_out_path)
+
+
+# Update fields in a TTF file
+def update_ttf_field(font_in_path, font_out_path, field_number, field_text):
+    font_in_path = Path(font_in_path)
+    font_out_path = Path(font_out_path)
+    
+    font = TTFont(font_in_path)
+    
+    name_table = font["name"]
+    for record in name_table.names:
+        if record.nameID == field_number:
+            record.string = field_text
+    
+    font.save(font_out_path)
+
+
+# Update the manufacturer field in a TTF file
+def update_ttf_manufacturer(font_in_path, font_out_path, manufacturer=MANUFACTURER):
+    update_ttf_field(font_in_path, font_out_path, 8, manufacturer)
+
+
+# Optimize a TTF file by detecting and deleting duplicate glyphs and relinking duplicate characters to a single glyph
+# Returns the number of duplicate glyphs detected and removed
+def optimize_ttf_duplicates(font_in_path, font_out_path):
+    font_in_path = Path(font_in_path)
+    font_out_path = Path(font_out_path)
+    
+    font = TTFont(font_in_path)
+    
+    original_glyph_order = list(font.getGlyphOrder())
+    glyf_table = font['glyf']
+    
+    hmtx_table = font['hmtx'] if 'hmtx' in font else None
+    if hmtx_table:
+        _ = hmtx_table.metrics
+    
+    cmap_table = font['cmap'].getBestCmap()
+    if not cmap_table:
+        raise Exception(f"font file \"{font_in_path}\" does not contain a valid Unicode cmap table.")
+    
+    unique_glyphs = {}
+    replacements = {}
+    glyphs_to_remove = set()
+    
+    for glyph_name in original_glyph_order:
+        if glyph_name == '.notdef':
+            continue
+        
+        if not glyf_table[glyph_name].numberOfContours or glyf_table[glyph_name].numberOfContours == 0:
+            continue
+        
+        glyph_data = glyf_table[glyph_name].compile(glyf_table)
+        
+        if glyph_data in unique_glyphs:
+            master_glyph = unique_glyphs[glyph_data]
+            replacements[glyph_name] = master_glyph
+            glyphs_to_remove.add(glyph_name)
+        else:
+            unique_glyphs[glyph_data] = glyph_name
+    
+    if not replacements:
+        font.save(font_out_path)
+        return 0
+    
+    for subtable in font['cmap'].tables:
+        if subtable.isUnicode():
+            for char_code, glyph_name in list(subtable.cmap.items()):
+                if glyph_name in replacements:
+                    subtable.cmap[char_code] = replacements[glyph_name]
+    
+    for glyph_name in glyphs_to_remove:
+        if glyph_name in glyf_table:
+            del glyf_table[glyph_name]
+        
+        if hmtx_table and glyph_name in hmtx_table.metrics:
+            del hmtx_table.metrics[glyph_name]
+    
+    font.glyphOrder = [g for g in original_glyph_order if g not in glyphs_to_remove]
+    
+    font.save(font_out_path)
+    return len(replacements)
