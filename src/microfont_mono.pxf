@@ -15,14 +15,14 @@ fixed_height_baseline_offset: 0
 creator_name: Ella Jameson (nimaid)
 font_family_name: Microfont Mono
 font_sub_family_name: Regular
-version: Version 3.1
+version: Version 3.2
 font_url: https://nimaid.itch.io/microfont
 license: Creative Commons Zero (CC0)
 license_url: https://creativecommons.org/publicdomain/zero/1.0/
 
 last_exported_path: 
 
-num_glyphs: 565
+num_glyphs: 566
 glyphs:
 	33:
 		advance: 4
@@ -1505,13 +1505,13 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 1 0, 0 1, 0 2, 0 3, 1 4, 2 2, 
+		pixels: 1 0, 0 1, 0 2, 2 3, 1 3, 2 2, 2 0, 
 	893:
 		advance: 4
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 1 4, 2 3, 2 2, 2 1, 1 0, 0 2, 
+		pixels: 0 0, 2 2, 2 1, 1 0, 0 2, 0 3, 1 3, 
 	894:
 		advance: 4
 		auto_update_advance: false
@@ -1583,7 +1583,7 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 1 2, 1 1, 2 0, 0 4, 1 4, 2 4, 
+		pixels: 1 2, 1 1, 2 0, 0 4, 1 4, 2 4, 1 0, 
 	913:
 		advance: 4
 		auto_update_advance: false
@@ -1709,7 +1709,7 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 1 4, 1 3, 1 2, 1 1, 1 0, 2 1, 2 2, 2 3, 0 1, 0 2, 0 3, 
+		pixels: 1 4, 1 3, 1 1, 1 0, 2 1, 2 2, 2 3, 0 1, 0 2, 0 3, 
 	935:
 		advance: 4
 		auto_update_advance: false
@@ -1763,7 +1763,7 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 1 2, 1 1, 2 0, 1 4, 
+		pixels: 1 2, 1 1, 2 0, 1 4, 1 0, 
 	944:
 		advance: 4
 		auto_update_advance: false
@@ -1787,7 +1787,7 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 0 0, 0 1, 1 2, 2 3, 2 4, 0 4, 0 3, 
+		pixels: 1 0, 2 2, 2 3, 1 2, 0 3, 2 1, 
 	948:
 		advance: 4
 		auto_update_advance: false
@@ -1799,13 +1799,13 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 2 0, 1 0, 1 1, 0 1, 1 2, 2 2, 
+		pixels: 2 0, 1 0, 1 3, 0 1, 1 2, 0 2, 2 3, 
 	950:
 		advance: 4
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 2 0, 1 0, 0 1, 0 2, 1 3, 0 4, 1 4, 2 4, 
+		pixels: 2 1, 1 1, 2 0, 0 2, 1 3, 0 4, 1 4, 2 4, 
 	951:
 		advance: 4
 		auto_update_advance: false
@@ -1823,7 +1823,7 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 1 2, 1 1, 2 0, 1 3, 
+		pixels: 1 2, 1 1, 2 0, 1 3, 1 0, 
 	954:
 		advance: 4
 		auto_update_advance: false
@@ -1835,7 +1835,7 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 2 0, 2 1, 1 2, 0 3, 0 4, 0 1, 0 0, 
+		pixels: 2 0, 2 1, 0 4, 0 1, 0 0, 0 2, 2 2, 1 3, 
 	956:
 		advance: 4
 		auto_update_advance: false
@@ -1907,13 +1907,13 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 2 0, 0 3, 1 2, 0 0, 2 3, 1 1, 
+		pixels: 2 0, 0 3, 0 2, 0 0, 2 3, 1 1, 2 2, 
 	968:
 		advance: 4
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 1 0, 1 1, 1 2, 1 3, 0 2, 0 3, 2 3, 2 2, 1 4, 
+		pixels: 1 0, 1 1, 1 2, 1 3, 0 2, 0 3, 2 3, 2 2, 1 4, 0 1, 2 1, 
 	969:
 		advance: 4
 		auto_update_advance: false
@@ -1925,7 +1925,7 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 1 2, 1 1, 2 0, 0 4, 2 4, 
+		pixels: 1 2, 1 1, 2 0, 0 4, 2 4, 1 0, 
 	971:
 		advance: 4
 		auto_update_advance: false
@@ -1955,13 +1955,13 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 0 0, 1 0, 2 1, 1 2, 0 2, 0 1, 0 3, 0 4, 1 4, 
+		pixels: 0 0, 1 0, 2 1, 1 2, 0 2, 0 1, 0 3, 0 4, 1 4, 2 2, 1 3, 
 	977:
 		advance: 4
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 0 1, 1 0, 2 1, 2 2, 2 3, 1 3, 0 3, 0 4, 1 4, 
+		pixels: 0 1, 1 0, 2 1, 2 2, 2 3, 1 3, 1 4, 2 4, 
 	978:
 		advance: 4
 		auto_update_advance: false
@@ -1973,13 +1973,13 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 1 0, 1 1, 0 1, 0 2, 2 1, 2 2, 0 4, 
+		pixels: 1 0, 1 1, 0 2, 2 2, 0 4, 
 	980:
 		advance: 4
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 1 0, 1 1, 0 1, 0 2, 2 1, 2 2, 
+		pixels: 1 0, 1 1, 2 4, 0 2, 0 4, 2 2, 
 	981:
 		advance: 4
 		auto_update_advance: false
@@ -2021,7 +2021,7 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 2 0, 2 1, 1 1, 0 2, 1 3, 2 3, 
+		pixels: 0 1, 1 0, 1 1, 0 2, 1 3, 2 3, 
 	988:
 		advance: 4
 		auto_update_advance: false
@@ -2033,31 +2033,31 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 1 4, 2 4, 1 2, 2 1, 
+		pixels: 2 1, 1 1, 2 3, 1 3, 0 3, 0 2, 0 1, 0 0, 2 0, 
 	990:
 		advance: 4
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 2 0, 1 1, 2 2, 2 3, 1 3, 0 3, 0 4, 
+		pixels: 2 0, 2 1, 2 2, 0 2, 1 2, 0 3, 0 4, 
 	991:
 		advance: 4
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 2 0, 2 1, 2 2, 1 2, 0 2, 0 3, 
+		pixels: 1 0, 2 1, 2 2, 1 2, 0 2, 0 3, 0 4, 
 	992:
 		advance: 4
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 2 0, 2 1, 2 2, 2 3, 1 4, 0 4, 1 2, 
+		pixels: 2 0, 2 1, 2 2, 2 3, 1 4, 0 4, 1 2, 0 1, 
 	993:
 		advance: 4
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 2 0, 2 1, 2 2, 1 3, 0 4, 1 1, 
+		pixels: 2 0, 2 1, 2 2, 1 3, 0 4, 1 2, 0 1, 
 	994:
 		advance: 4
 		auto_update_advance: false
@@ -2087,31 +2087,31 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 0 4, 0 3, 0 2, 1 4, 2 4, 2 3, 2 2, 2 1, 1 0, 
+		pixels: 0 4, 0 3, 0 2, 1 3, 2 2, 2 1, 1 0, 
 	999:
 		advance: 4
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 0 4, 0 3, 0 2, 1 3, 2 3, 2 2, 2 1, 1 0, 
+		pixels: 0 3, 0 2, 1 2, 0 0, 2 1, 1 0, 
 	1000:
 		advance: 4
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 2 0, 1 0, 1 1, 0 1, 2 2, 2 3, 2 4, 1 4, 0 4, 0 3, 
+		pixels: 2 0, 1 0, 1 1, 0 1, 2 2, 2 3, 1 4, 0 3, 
 	1001:
 		advance: 4
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 2 0, 1 0, 1 1, 0 1, 2 2, 2 3, 1 4, 0 3, 
+		pixels: 2 0, 1 0, 1 1, 0 1, 2 2, 1 3, 0 3, 
 	1002:
 		advance: 4
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 0 0, 1 0, 2 0, 0 1, 2 1, 1 2, 0 3, 0 4, 2 3, 2 4, 
+		pixels: 0 0, 1 0, 2 0, 0 1, 2 1, 1 2, 0 4, 2 4, 1 3, 
 	1003:
 		advance: 4
 		auto_update_advance: false
@@ -2129,7 +2129,7 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 1 0, 0 1, 2 1, 1 2, 2 3, 
+		pixels: 1 0, 0 1, 2 1, 0 2, 2 3, 2 0, 0 0, 1 1, 1 3, 
 	1006:
 		advance: 4
 		auto_update_advance: false
@@ -2153,7 +2153,7 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 2 0, 1 0, 0 1, 0 2, 1 2, 2 2, 2 3, 0 3, 1 4, 
+		pixels: 2 0, 1 0, 0 1, 0 2, 1 2, 2 2, 2 3, 1 3, 
 	1010:
 		advance: 4
 		auto_update_advance: false
@@ -2177,13 +2177,13 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 2 0, 1 0, 0 1, 0 2, 0 3, 1 2, 2 2, 1 4, 2 4, 
+		pixels: 2 0, 1 0, 1 2, 1 3, 2 3, 0 2, 0 1, 
 	1014:
 		advance: 4
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 0 0, 1 0, 2 1, 2 2, 2 3, 1 2, 0 2, 1 4, 0 4, 
+		pixels: 0 0, 1 0, 1 3, 1 2, 2 2, 0 3, 2 1, 
 	1015:
 		advance: 4
 		auto_update_advance: false
@@ -2207,7 +2207,7 @@ glyphs:
 		auto_update_advance: false
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
-		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 1 3, 1 2, 2 4, 2 3, 2 2, 2 1, 2 0, 
+		pixels: 0 0, 0 1, 0 2, 0 3, 0 4, 1 3, 2 4, 2 3, 2 2, 2 1, 2 0, 
 	1019:
 		advance: 4
 		auto_update_advance: false
@@ -3414,3 +3414,9 @@ glyphs:
 		auto_advance_amount: 1
 		was_duplicated_but_unmodified: false
 		pixels: 1 4, 1 3, 1 2, 1 1, 2 0, 0 2, 2 2, 
+	975:
+		advance: 4
+		auto_update_advance: false
+		auto_advance_amount: 1
+		was_duplicated_but_unmodified: false
+		pixels: 0 5, 0 4, 0 3, 1 4, 2 5, 2 3, 2 2, 1 1, 0 1, 
