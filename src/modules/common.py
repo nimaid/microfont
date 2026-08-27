@@ -17,9 +17,12 @@ class FontFormats(Enum):
     WOFF = "woff"
     WOFF2 = "woff2"
 
+PIL_DPI = 72
+
 FONT_CHAR_LINE_SPACING = 1
 FONT_CHAR_WIDTH = 3
 FONT_CHAR_HEIGHT = 5
+FONT_DPI = 96
 
 FONT_CHAR_SIZE = (FONT_CHAR_WIDTH, FONT_CHAR_HEIGHT)
 FONT_SIZE = FONT_CHAR_HEIGHT + FONT_CHAR_LINE_SPACING
@@ -48,10 +51,6 @@ FONT_PATHS = {
     "optimized_raw_ttf": {
         "proportional": Path(PATH, "temp", "O_microfont.ttf"),
         "monospaced": Path(PATH, "temp", "O_microfont_mono.ttf"),
-    },
-    "scaled_raw_ttf": {
-        "proportional": Path(PATH, "temp", "S_microfont.ttf"),
-        "monospaced": Path(PATH, "temp", "S_microfont_mono-Mono.ttf"),
     },
     "manufacturer_raw_ttf": {
         "proportional": Path(PATH, "temp", "M_microfont.ttf"),
@@ -365,6 +364,7 @@ def create_binary_table_from_image(font_image, indent=True):
     
     return create_binary_table_from_glyph_bitmaps(glyphs, indent)
 
+
 # Convert a .ttf font into a different format
 def convert_ttf(ttf_path, format, output_path=None):
     if not format in FontFormats:
@@ -380,6 +380,15 @@ def convert_ttf(ttf_path, format, output_path=None):
     
     font.flavor = output_format
     font.save(output_path)
+
+
+# Opens a .ttf font at a specified DPI
+def open_ttf_at_dpi(ttf_path, size=FONT_SIZE, dpi=FONT_DPI):
+    adjusted_size = round((size * dpi) / PIL_DPI)
+    
+    font = ImageFont.truetype(ttf_path, size=adjusted_size)
+    
+    return font
 
 
 # Get a glyph's (transparent) image from a TTF font
@@ -450,19 +459,6 @@ def render_ttf_font(text,
         output_image = output_image.resize((output_image.width * scale, output_image.height * scale), resample=Image.Resampling.NEAREST)
     
     return output_image
-
-
-# Fixes the scaling on PixelForge TTF fonts
-def fix_pixelforge_ttf_scaling(font_in_path, font_out_path, scale=0.75):
-    font_in_path = Path(font_in_path)
-    font_out_path = Path(font_out_path)
-    
-    font = TTFont(font_in_path)
-    
-    head = font['head']
-    head.unitsPerEm = round(head.unitsPerEm * scale)
-    
-    font.save(font_out_path)
 
 
 # Update the year in the copyright text in PixelForge TTF files

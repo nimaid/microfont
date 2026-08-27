@@ -88,7 +88,7 @@ def parse_args_generate(args, default_font_path):
     return parsed_args
 
 # Parse arguments for proportional image generator
-def parse_args_proportional(args, default_font_path, default_font_size, default_font_char_width, default_font_char_height, default_font_char_line_spacing):
+def parse_args_proportional(args, default_font_path, default_font_size, default_font_dpi, default_font_char_width, default_font_char_height, default_font_char_line_spacing):
     parser = argparse.ArgumentParser(
         description=f"Renders text into an image using a TTF font.\n\n"
                     f"Valid parameters are shown in {{braces}}.\n"
@@ -110,6 +110,10 @@ def parse_args_proportional(args, default_font_path, default_font_size, default_
                        
     parser.add_argument("-fs", "--font_size", dest="font_size", type=int, required=False, default=default_font_size,
                         help=f"the size at which the font renders pixel-perfect at 1x [{default_font_size}]"
+                       )
+    
+    parser.add_argument("-fd", "--font_dpi", dest="font_dpi", type=int, required=False, default=default_font_dpi,
+                        help=f"the DPI at which the font renders pixel-perfect at 1x [{default_font_dpi}]"
                        )
     
     parser.add_argument("-fw", "--font_char_width", dest="font_char_width", type=int, required=False, default=default_font_char_width,
@@ -184,8 +188,8 @@ def parse_args_proportional(args, default_font_path, default_font_size, default_
         parser.error(f"the file \"{font}\" does not exist")
     if font.suffix.lower() != ".ttf":
         parser.error(f"the file \"{font}\" is not a valid TTF file")
-    parsed_args.font = ImageFont.truetype(font, parsed_args.font_size)
-    
+    parsed_args.font = common.open_ttf_at_dpi(font, parsed_args.font_size, parsed_args.font_dpi)
+        
     parsed_args.color = ImageColor.getrgb(parsed_args.color)
     
     if parsed_args.background.lower().strip() == "none":

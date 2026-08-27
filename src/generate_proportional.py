@@ -11,6 +11,7 @@ def main(args):
         args=args,
         default_font_path=common.FONT_PATHS["ttf"]["proportional"],
         default_font_size=common.FONT_SIZE,
+        default_font_dpi=common.FONT_DPI,
         default_font_char_width=common.FONT_CHAR_SIZE[0],
         default_font_char_height=common.FONT_CHAR_SIZE[1],
         default_font_char_line_spacing=common.FONT_CHAR_LINE_SPACING

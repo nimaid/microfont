@@ -13,10 +13,8 @@ def main(args):
     
     # Optimize proportional .ttf
     proportional_duplicates = common.optimize_ttf_duplicates(common.FONT_PATHS["raw_ttf"]["proportional"], common.FONT_PATHS["optimized_raw_ttf"]["proportional"])
-    # Fix proportional .ttf scaling (PixelForge error)
-    common.fix_pixelforge_ttf_scaling(common.FONT_PATHS["optimized_raw_ttf"]["proportional"], common.FONT_PATHS["scaled_raw_ttf"]["proportional"])
     # Update manufacturer
-    common.update_ttf_manufacturer(common.FONT_PATHS["scaled_raw_ttf"]["proportional"], common.FONT_PATHS["manufacturer_raw_ttf"]["proportional"])
+    common.update_ttf_manufacturer(common.FONT_PATHS["optimized_raw_ttf"]["proportional"], common.FONT_PATHS["manufacturer_raw_ttf"]["proportional"])
     # Update copyright year
     common.update_pixelforge_ttf_copyright_year(common.FONT_PATHS["manufacturer_raw_ttf"]["proportional"], common.FONT_PATHS["ttf"]["proportional"])
     print(f"Updated proportional TTF (removed {proportional_duplicates} duplicate glyphs)")
@@ -31,10 +29,8 @@ def main(args):
     
     # Optimize monospaced .ttf
     monospaced_duplicates = common.optimize_ttf_duplicates(common.FONT_PATHS["raw_ttf"]["monospaced"], common.FONT_PATHS["optimized_raw_ttf"]["monospaced"])
-    # Fix monospaced .ttf scaling (PixelForge error)
-    common.fix_pixelforge_ttf_scaling(common.FONT_PATHS["optimized_raw_ttf"]["monospaced"], common.FONT_PATHS["scaled_raw_ttf"]["monospaced"])
     # Update manufacturer
-    common.update_ttf_manufacturer(common.FONT_PATHS["scaled_raw_ttf"]["monospaced"], common.FONT_PATHS["manufacturer_raw_ttf"]["monospaced"])
+    common.update_ttf_manufacturer(common.FONT_PATHS["optimized_raw_ttf"]["monospaced"], common.FONT_PATHS["manufacturer_raw_ttf"]["monospaced"])
     # Update copyright year
     common.update_pixelforge_ttf_copyright_year(common.FONT_PATHS["manufacturer_raw_ttf"]["monospaced"], common.FONT_PATHS["ttf"]["monospaced"])
     print(f"Updated monospaced TTF (removed {monospaced_duplicates} duplicate glyphs)")
@@ -48,7 +44,7 @@ def main(args):
     print("Updated monospaced WOFF2\n")
     
     # Make 1D PNG from monospaced TTF
-    font_monospaced = ImageFont.truetype(common.FONT_PATHS["ttf"]["monospaced"], common.FONT_SIZE)
+    font_monospaced = common.open_ttf_at_dpi(common.FONT_PATHS["ttf"]["monospaced"], common.FONT_SIZE, common.FONT_DPI)
     font_image_1d_png = common.create_1d_font_from_ttf(font_monospaced, common.FONT_CHAR_SIZE, char_line_spacing=common.FONT_CHAR_LINE_SPACING)
     font_image_1d_png.save(common.FONT_PATHS["1d"]["png"])
     print("Updated 1D PNG")
@@ -112,7 +108,7 @@ def main(args):
     print("Updated demo image")
     
     # Render pangram image
-    font_proportional = ImageFont.truetype(common.FONT_PATHS["ttf"]["proportional"], common.FONT_SIZE)
+    font_proportional = common.open_ttf_at_dpi(common.FONT_PATHS["ttf"]["proportional"], common.FONT_SIZE, common.FONT_DPI)
     common.render_ttf_font(
         text="Angry Buzzing Citizens\nDenounced Equine Federal\nGovernment Hijackers In July,\nKeeping Local Militias\nNear Our Public Quarters,\nRapidly Silencing Toxic\nUnderworld Violence Without\nXenografting Young Zebras.",
         font=font_proportional,
