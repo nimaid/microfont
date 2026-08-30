@@ -33,28 +33,28 @@ PATH = Path(__file__).parent.parent.parent.resolve()
 
 FONT_PATHS = {
     "1d": {
-        "png": Path(PATH, "Microfont_1D.png"),
-        "bmp": Path(PATH, "Microfont_1D.bmp"),
+        "png": Path(PATH, "3x5-Microfont_1D.png"),
+        "bmp": Path(PATH, "3x5-Microfont_1D.bmp"),
     },
     "2d": {
-        "png": Path(PATH, "Microfont_2D.png"),
-        "bmp": Path(PATH, "Microfont_2D.bmp"),
+        "png": Path(PATH, "3x5-Microfont_2D.png"),
+        "bmp": Path(PATH, "3x5-Microfont_2D.bmp"),
     },
     "ttf": {
-        "proportional": Path(PATH, "Microfont.ttf"),
-        "monospaced": Path(PATH, "Microfont-Mono.ttf"),
+        "proportional": Path(PATH, "3x5-Microfont.ttf"),
+        "monospaced": Path(PATH, "3x5-Microfont-Mono.ttf"),
     },
     "raw_ttf": {
-        "proportional": Path(PATH, "temp", "microfont.ttf"),
-        "monospaced": Path(PATH, "temp", "microfont_mono.ttf"),
+        "proportional": Path(PATH, "temp", "3x5_microfont.ttf"),
+        "monospaced": Path(PATH, "temp", "3x5_microfont_mono.ttf"),
     },
     "optimized_raw_ttf": {
-        "proportional": Path(PATH, "temp", "O_microfont.ttf"),
-        "monospaced": Path(PATH, "temp", "O_microfont_mono.ttf"),
+        "proportional": Path(PATH, "temp", "O_3x5_microfont.ttf"),
+        "monospaced": Path(PATH, "temp", "O_3x5_microfont_mono.ttf"),
     },
     "manufacturer_raw_ttf": {
-        "proportional": Path(PATH, "temp", "M_microfont.ttf"),
-        "monospaced": Path(PATH, "temp", "M_microfont_mono-Mono.ttf"),
+        "proportional": Path(PATH, "temp", "M_3x5_microfont.ttf"),
+        "monospaced": Path(PATH, "temp", "M_3x5_microfont_mono.ttf"),
     },
 }
 

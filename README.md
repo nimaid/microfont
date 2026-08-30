@@ -44,12 +44,12 @@
 
 ## Bitmap Fonts (Sprite Sheets)
 Two different formats of bitmap font are provided:
-- `Microfont_1D` is a simple format that has one long row of all `128` ASCII characters laid out left-to-right.
-  - [`Microfont_1D.png`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont_1D.png) (transparent)
-  - [`Microfont_1D.bmp`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont_1D.bmp) (1-bit black-and-white)
-- `Microfont_2D` is a more complex format that has the `128` ASCII characters laid out in `8` rows of `16`. They are laid out left-to-right, top-to-bottom (like English text).
-  - [`Microfont_2D.png`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont_2D.png) (transparent)
-  - [`Microfont_2D.bmp`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont_2D.bmp) (1-bit black-and-white)
+- `3x5-Microfont_1D` is a simple format that has one long row of all `128` ASCII characters laid out left-to-right.
+  - [`3x5-Microfont_1D.png`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/3x5-Microfont_1D.png) (transparent)
+  - [`3x5-Microfont_1D.bmp`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/3x5-Microfont_1D.bmp) (1-bit black-and-white)
+- `3x5-Microfont_2D` is a more complex format that has the `128` ASCII characters laid out in `8` rows of `16`. They are laid out left-to-right, top-to-bottom (like English text).
+  - [`3x5-Microfont_2D.png`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/3x5-Microfont_2D.png) (transparent)
+  - [`3x5-Microfont_2D.bmp`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/3x5-Microfont_2D.bmp) (1-bit black-and-white)
 
 <br />
 <details>
@@ -69,7 +69,7 @@ bottom = y + 5
 ```
 
 ### 1D Calculations
-These calculations work for `Microfont_1D.png` and are probably the simplest to do. The X coordinate is directly related to the full ASCII character code.
+These calculations work for `3x5-Microfont_1D.png` and are probably the simplest to do. The X coordinate is directly related to the full ASCII character code.
 
 ```
 x = get_ascii_code(character) * 3
@@ -77,7 +77,7 @@ y = 0
 ```
 
 ### 2D Calculations
-These calculations work for `Microfont_2D.png`. While they are slightly more complex, they allow for the sprite sheet to be a more reasonable aspect ratio. The X coordinate is based on the low nibble of the character code and the Y coordinate is based on the high nibble.
+These calculations work for `3x5-Microfont_2D.png`. While they are slightly more complex, they allow for the sprite sheet to be a more reasonable aspect ratio. The X coordinate is based on the low nibble of the character code and the Y coordinate is based on the high nibble.
 
 ```
 x = (get_ascii_code(character) & 0b1111) * 3
@@ -90,14 +90,14 @@ y = (get_ascii_code(character) >> 4) * 5
 Thanks to the freeware program [PixelForge](https://www.pixel-forge.com/), I was able to create two different versions of this bitmap font in `.ttf` format! And thanks to [fontTools for Python](https://pypi.org/project/fonttools/), I was able to convert those into `.woff` and `.woff2` fonts, which are more suitable for web usage.
 
 Two different font styles are provided:
-- The `Microfont-Mono` font is a truly faithful recreation of the monospaced results you would normally get using this font programmatically from the sprite sheet.
-  - [`Microfont-Mono.ttf`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont-Mono.ttf)
-  - [`Microfont-Mono.woff2`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont-Mono.woff2)
-  - [`Microfont-Mono.woff`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont-Mono.woff)
+- The `3x5-Microfont-Mono` font is a truly faithful recreation of the monospaced results you would normally get using this font programmatically from the sprite sheet.
+  - [`3x5-Microfont-Mono.ttf`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/3x5-Microfont-Mono.ttf)
+  - [`3x5-Microfont-Mono.woff2`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/3x5-Microfont-Mono.woff2)
+  - [`3x5-Microfont-Mono.woff`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/3x5-Microfont-Mono.woff)
 - The `Microfont` font is a version that is not monospaced, which may be desirable for graphic design and general text rendering.
-  - [`Microfont.ttf`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont.ttf)
-  - [`Microfont.woff2`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont.woff2)
-  - [`Microfont.woff`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont.woff)
+  - [`3x5-Microfont.ttf`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/3x5-Microfont.ttf)
+  - [`3x5-Microfont.woff2`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/3x5-Microfont.woff2)
+  - [`3x5-Microfont.woff`](https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/3x5-Microfont.woff)
 
 <br />
 <details>
@@ -124,20 +124,20 @@ It is important to note that points (`pt`) are NOT equal to pixels (`px`). To co
 You can add these fonts for use on a webpage by including the following code in your CSS stylesheet:
 ```css
 @font-face {
-  font-family: 'Microfont';
-  src: url('https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont.woff2') format('woff2');
-  src: url('https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont.woff') format('woff');
-  src: url('https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont.ttf') format('truetype');
+  font-family: '3x5 Microfont';
+  src: url('https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/3x5-Microfont.woff2') format('woff2');
+  src: url('https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/3x5-Microfont.woff') format('woff');
+  src: url('https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/3x5-Microfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Microfont-Mono';
-  src: url('https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont-Mono.woff2') format('woff2');
-  src: url('https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont-Mono.woff') format('woff');
-  src: url('https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/Microfont-Mono.ttf') format('truetype');
+  font-family: '3x5 Microfont Mono';
+  src: url('https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/3x5-Microfont-Mono.woff2') format('woff2');
+  src: url('https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/3x5-Microfont-Mono.woff') format('woff');
+  src: url('https://raw.githubusercontent.com/nimaid/microfont/refs/heads/main/3x5-Microfont-Mono.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -199,8 +199,8 @@ pip install Pillow fontTools brotli
 I have included two Python scripts named `src/generate_1D.py` and `src/generate_2D.py`. I used these to generate the example images.
 
 Both are tools with a command line interface that render text into images using a sprite sheet, however:
-- `src/generate_1D.py` uses `Microfont_1D.png`
-- `src/generate_2D.py` uses `Microfont_2D.png`
+- `src/generate_1D.py` uses `3x5-Microfont_1D.png`
+- `src/generate_2D.py` uses `3x5-Microfont_2D.png`
 
 To see the key differences between using the 1D and 2D sprite sheet, open `src/modules/common.py` and compare the following functions:
 - `validate_image_font_1d()` / `validate_image_font_2d()`
