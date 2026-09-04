@@ -118,7 +118,6 @@ It is important to note that points (`pt`) are NOT equal to pixels (`px`). To co
 - 6x - `36pt @ 96 DPI` or `48px`
 - ... etc.
 
-*(Note: Due to a bug in PixelForge, I have to use Python to change the Units Per Em value to 75% of the one PixelForge sets on export. Without this change, the suggested font sizes are incorrect.)*
 
 ### Web Usage
 You can add these fonts for use on a webpage by including the following code in your CSS stylesheet:
